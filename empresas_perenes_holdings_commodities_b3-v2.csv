@@ -1,0 +1,89 @@
+﻿Nome,Ticker,Setor,Subsetor
+Itaú Unibanco,"ITUB3, ITUB4",Financeiro,Bancos
+Banco do Brasil,BBAS3,Financeiro,Bancos
+Bradesco,"BBDC3, BBDC4",Financeiro,Bancos
+Banco Santander Brasil,"SANB3, SANB4, SANB11",Financeiro,Bancos
+Banrisul,"BRSR3, BRSR5, BRSR6",Financeiro,Bancos
+Banco ABC Brasil,ABCB4,Financeiro,Bancos
+Banco Pine,PINE4,Financeiro,Bancos
+Banco BRB,"BSLI3, BSLI4",Financeiro,Bancos
+"B3 (Brasil, Bolsa, Balcão)",B3SA3,Financeiro,Serviços Financeiros / Bolsa
+Taesa,"TAEE3, TAEE4, TAEE11",Energia Elétrica,Transmissão
+ISA CTEEP (Transmissão Paulista),"TRPL3, TRPL4",Energia Elétrica,Transmissão
+Alupar,"ALUP3, ALUP4, ALUP11",Energia Elétrica,Transmissão / Geração
+Eletrobras,"ELET3, ELET6",Energia Elétrica,Geração / Transmissão
+Engie Brasil,EGIE3,Energia Elétrica,Geração / Transmissão
+CPFL Energia,CPFE3,Energia Elétrica,Distribuição / Geração
+Auren Energia,AURE3,Energia Elétrica,Geração / Comercialização
+Equatorial Energia,EQTL3,Energia Elétrica,Distribuição / Transmissão
+Neoenergia,NEOE3,Energia Elétrica,Distribuição / Geração
+Cemig,"CMIG3, CMIG4",Energia Elétrica,Integrada (Distribuição/Geração/Transmissão)
+Copel,"CPLE3, CPLE5, CPLE6",Energia Elétrica,Integrada (Distribuição/Geração/Transmissão)
+Energisa,"ENGI3, ENGI4, ENGI11",Energia Elétrica,Distribuição / Transmissão
+Light,LIGT3,Energia Elétrica,Distribuição / Geração
+Auren,AURE3,Energia Elétrica,Geração de Energia
+Sabesp,SBSP3,Saneamento e Gás,Água e Esgoto
+Copasa,CSMG3,Saneamento e Gás,Água e Esgoto
+Sanepar,"SAPR3, SAPR4, SAPR11",Saneamento e Gás,Água e Esgoto
+Ambipar,AMBP3,Saneamento e Serviços,Gestão Ambiental e Resíduos
+Cosan (Comgás/Raízen),CSAN3,Saneamento e Gás,Distribuição de Gás e Conglomerado
+BB Seguridade,BBSE3,Seguros e Previdência,Corretagem e Seguros
+Caixa Seguridade,CXSE3,Seguros e Previdência,Corretagem e Seguros
+Porto (Porto Seguro),PSSA3,Seguros e Previdência,Seguradora
+IRB Brasil RE,IRBR3,Seguros e Previdência,Resseguros
+Wiz Soluções,WIZC3,Seguros e Previdência,Corretagem
+Telefônica Brasil (Vivo),VIVT3,Telecomunicações,Telefonia e Conectividade
+TIM Brasil,TIMS3,Telecomunicações,Telefonia e Conectividade
+Unifique,FIQE3,Telecomunicações,Provedor Regional de Internet
+Desktop,DESK3,Telecomunicações,Provedor Regional de Internet
+Vale,VALE3,Mineração e Siderurgia,Mineração de Ferro e Metais
+CSN Mineração,CMIN3,Mineração e Siderurgia,Mineração de Ferro
+Gerdau,"GGBR3, GGBR4",Mineração e Siderurgia,Siderurgia e Aço Longo
+Metalúrgica Gerdau,"GOAU3, GOAU4",Mineração e Siderurgia,Holding de Siderurgia
+Usiminas,"USIM3, USIM5",Mineração e Siderurgia,Siderurgia e Aço Plano
+CSN (Companhia Siderúrgica Nacional),CSNA3,Mineração e Siderurgia,"Siderurgia, Mineração e Logística"
+CBR (CBR / Paranapanema),PMAM3,Mineração e Siderurgia,Cobre e Ligas
+Petrobras,"PETR3, PETR4","Petróleo, Gás e Combustíveis",Exploração e Refino de Petróleo
+PRIO (PetroRio),PRIO3,"Petróleo, Gás e Combustíveis",Exploração e Produção (Junior Oil)
+Brava Energia (3R / Enauta),BRAV3,"Petróleo, Gás e Combustíveis",Exploração e Produção (Junior Oil)
+Petroreconcavo,RECV3,"Petróleo, Gás e Combustíveis",Exploração Onshore
+Ultrapar (Ipiranga),UGPA3,"Petróleo, Gás e Combustíveis",Distribuição de Combustíveis
+Vibra Energia,VBBR3,"Petróleo, Gás e Combustíveis",Distribuição de Combustíveis
+Raízen,RAIZ4,"Petróleo, Gás e Combustíveis","Açúcar, Etanol e Combustíveis"
+Suzano,SUZB3,Papel e Celulose,Produção de Celulose de Eucalipto
+Klabin,"KLBN3, KLBN4, KLBN11",Papel e Celulose,Embalagens e Celulose de Fibra Curta/Longa
+Dexco (antiga Duratex),DXCO3,Madeira e Construção,Painéis de Madeira e Louças/Metais
+Itaúsa,"ITSA3, ITSA4",Holding,Holding Financeira / Industrial (Controla Itaú)
+Bradespar,"BRGE3, BRGE8, BRAP3, BRAP4",Holding,Holding de Mineração (Participação na Vale)
+BB Seguridade (Holding),BBSE3,Holding,Holding de Seguros do Banco do Brasil
+Cosan,CSAN3,Holding,"Holding Conglomerado (Compass, Moove, Rumo)"
+Simpar,SIMH3,Holding,"Holding de Logística (Controla Vamos, Movida, JSL)"
+Ultrapar,UGPA3,Holding,"Holding de Combustíveis e Gás (Ipiranga, Ultragaz)"
+Unipar Carbocloro,"UNIP3, UNIP5, UNIP6",Holding / Químico,Holding e Petroquímica
+Metalúrgica Gerdau (Holding),GOAU4,Holding,Holding da Gerdau
+WEG,WEGE3,Bens Industriais,"Motores, Automação e Energia"
+Schulz,"SHUL3, SHUL4",Bens Industriais,Compressores e Autopeças
+Romi,ROMI3,Bens Industriais,Máquinas e Equipamentos
+Kepler Weber,KEPL3,Bens Industriais,Armazenagem Agrícola
+Metalfrio,FRIO3,Bens Industriais,Refrigeração Comercial
+Embraer,EMBR3,Bens Industriais,Aeronáutica e Defesa
+Marcopolo,"POMO3, POMO4",Bens Industriais,Material Rodante / Ônibus
+Frasle Mobility (Fras-le),FRAS3,Bens Industriais,Autopeças / Material de Fricção
+Randoncorp (Randon),"RAPT3, RAPT4",Bens Industriais,Reboques e Autopeças
+Tupy,TUPY3,Bens Industriais,Fundição e Componentes
+Iochpe-Maxion,MYPK3,Bens Industriais,Rodas e Estruturais Automotivos
+Aeris Energy,AERI3,Bens Industriais,Pás para Geradores Eólicos
+CCR,CCRO3,Infraestrutura / Logística,Concessões Rodoviárias e Aeroportos
+Ecorodovias,ECOR3,Infraestrutura / Logística,Concessões Rodoviárias
+Rumo Logística,RAIL3,Infraestrutura / Logística,Transporte Ferroviário de Cargas
+Santos Brasil,STBP3,Infraestrutura / Logística,Operação Portuária e Terminais
+JSL,JSLG3,Infraestrutura / Logística,Transporte Rodoviário e Logística
+Grupo Vamos,VAMO3,Infraestrutura / Logística,Locação de Caminhões e Máquinas
+Raia Drogasil,RADL3,Saúde e Varejo Farmacêutico,Rede de Farmácias
+Pague Menos,PGMN3,Saúde e Varejo Farmacêutico,Rede de Farmácias
+M. Dias Branco,MDIA3,Consumo Não Cíclico,Alimentos Processados
+JBS,JBSS3,Consumo Não Cíclico,Proteína Animal / Alimentos
+BRF,BRFS3,Consumo Não Cíclico,Proteína Animal / Alimentos
+Marfrig,MRFG3,Consumo Não Cíclico,Proteína Animal
+Minerva Foods,BEEF3,Consumo Não Cíclico,Exportação de Carne Bovina
+Camil Alimentos,CAML3,Consumo Não Cíclico,"Arroz, Feijão e Grãos"

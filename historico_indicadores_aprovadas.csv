@@ -1,0 +1,225 @@
+﻿ticker,nome,setor,veredito,status,ano,roe,divida_liquida_ebitda,pl,dividendo_por_acao_ano,payout_ratio,anos_pagando_dividendo,teve_queda_de_dividendo
+POMO3,Marcopolo,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2025,0.3192,0.8,5.6,1.15,1.17,5,False
+POMO3,Marcopolo,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2024,0.298,0.68,5.01,0.5,0.63,5,False
+POMO3,Marcopolo,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2023,0.2302,0.83,4.63,0.25,0.39,5,False
+POMO3,Marcopolo,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2022,0.142,1.89,3.31,0.11,0.3,5,False
+POMO3,Marcopolo,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2021,,,,0.08,,5,False
+POMO4,Marcopolo,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2025,0.3192,0.8,5.85,1.15,1.17,5,False
+POMO4,Marcopolo,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2024,0.298,0.68,6.76,0.5,0.63,5,False
+POMO4,Marcopolo,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2023,0.2302,0.83,6.13,0.27,0.42,5,False
+POMO4,Marcopolo,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2022,0.142,1.89,4.16,0.11,0.3,5,False
+POMO4,Marcopolo,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2021,,,,0.08,,5,False
+FIQE3,Unifique,Telecomunicações,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2025,0.187,0.83,8.29,0.85,1.44,5,False
+FIQE3,Unifique,Telecomunicações,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2024,0.1457,0.38,5.26,0.19,0.39,5,False
+FIQE3,Unifique,Telecomunicações,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2023,0.1322,0.39,7.43,0.14,0.38,5,False
+FIQE3,Unifique,Telecomunicações,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2022,0.1306,0.06,7.72,0.08,0.23,5,False
+FIQE3,Unifique,Telecomunicações,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2021,,,,0.08,,5,False
+CMIG4,Cemig,Energia Elétrica,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2025,0.1714,2.07,,1.65,,5,True
+CMIG4,Cemig,Energia Elétrica,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2024,0.26,0.92,3.59,1.33,0.53,5,True
+CMIG4,Cemig,Energia Elétrica,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2023,0.2338,0.96,3.13,0.99,0.49,5,True
+CMIG4,Cemig,Energia Elétrica,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2022,0.1879,1.52,2.94,1.51,0.81,5,True
+CMIG4,Cemig,Energia Elétrica,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2021,,,3.16,0.81,0.62,5,True
+BSLI3,Banco BRB,Financeiro,Aprovada com Ressalva,ELEGÍVEL PARA COMPRA,2024,0.088,,9.18,0.08,0.09,4,True
+BSLI3,Banco BRB,Financeiro,Aprovada com Ressalva,ELEGÍVEL PARA COMPRA,2023,0.1027,,18.75,0.14,0.21,4,True
+BSLI3,Banco BRB,Financeiro,Aprovada com Ressalva,ELEGÍVEL PARA COMPRA,2022,0.0185,,180.09,1.02,10.77,4,True
+BSLI3,Banco BRB,Financeiro,Aprovada com Ressalva,ELEGÍVEL PARA COMPRA,2021,0.2507,,15.84,0.47,0.3,4,True
+WIZC3,Wiz Soluções,Seguros e Previdência,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2025,0.2882,,6.85,0.57,0.45,4,True
+WIZC3,Wiz Soluções,Seguros e Previdência,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2024,0.293,,4.97,0.25,0.25,4,True
+WIZC3,Wiz Soluções,Seguros e Previdência,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2023,0.294,,7.07,0.45,0.5,4,True
+WIZC3,Wiz Soluções,Seguros e Previdência,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2022,0.3445,,6.85,0.59,0.72,4,True
+BSLI4,Banco BRB,Financeiro,Aprovada com Ressalva,ELEGÍVEL PARA COMPRA,2024,0.088,,9.34,0.08,0.09,4,True
+BSLI4,Banco BRB,Financeiro,Aprovada com Ressalva,ELEGÍVEL PARA COMPRA,2023,0.1027,,17.72,0.13,0.2,4,True
+BSLI4,Banco BRB,Financeiro,Aprovada com Ressalva,ELEGÍVEL PARA COMPRA,2022,0.0185,,143.83,0.99,10.45,4,True
+BSLI4,Banco BRB,Financeiro,Aprovada com Ressalva,ELEGÍVEL PARA COMPRA,2021,0.2507,,10.16,0.46,0.29,4,True
+TIMS3,TIM Brasil,Telecomunicações,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2025,0.1798,0.93,11.63,2.51,1.4,5,True
+TIMS3,TIM Brasil,Telecomunicações,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2024,0.1194,0.95,9.57,1.14,0.88,5,True
+TIMS3,TIM Brasil,Telecomunicações,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2023,0.1091,1.04,12.32,1.74,1.48,5,True
+TIMS3,TIM Brasil,Telecomunicações,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2022,0.0658,1.5,12.71,0.58,0.84,5,True
+TIMS3,TIM Brasil,Telecomunicações,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2021,,,,0.43,,5,True
+PMAM3,CBR (CBR / Paranapanema),Mineração e Siderurgia,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,2025,0.1765,-96.36,-0.05,0.0,,0,False
+PMAM3,CBR (CBR / Paranapanema),Mineração e Siderurgia,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,2024,0.3402,-5.08,-0.03,0.0,,0,False
+PMAM3,CBR (CBR / Paranapanema),Mineração e Siderurgia,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,2023,0.3291,-7.29,-0.18,0.0,,0,False
+PMAM3,CBR (CBR / Paranapanema),Mineração e Siderurgia,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,2022,0.9587,-1.42,-0.1,0.0,,0,False
+PMAM3,CBR (CBR / Paranapanema),Mineração e Siderurgia,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,2021,,,,0.0,,0,False
+CXSE3,Caixa Seguridade,Seguros e Previdência,Aprovada (Pura),AGUARDAR (margem insuficiente),2025,0.3167,,10.89,1.26,0.88,5,False
+CXSE3,Caixa Seguridade,Seguros e Previdência,Aprovada (Pura),AGUARDAR (margem insuficiente),2024,0.2921,,9.79,1.08,0.86,5,False
+CXSE3,Caixa Seguridade,Seguros e Previdência,Aprovada (Pura),AGUARDAR (margem insuficiente),2023,0.2846,,8.72,1.01,0.85,5,False
+CXSE3,Caixa Seguridade,Seguros e Previdência,Aprovada (Pura),AGUARDAR (margem insuficiente),2022,0.2441,,6.1,0.65,0.65,5,False
+CXSE3,Caixa Seguridade,Seguros e Previdência,Aprovada (Pura),AGUARDAR (margem insuficiente),2021,,,,0.24,,5,False
+PRIO3,PRIO (PetroRio),"Petróleo, Gás e Combustíveis",Aprovada (Pura),SEM DADOS DE DIVIDENDO,2025,0.0873,3.47,14.95,0.0,0.0,1,True
+PRIO3,PRIO (PetroRio),"Petróleo, Gás e Combustíveis",Aprovada (Pura),SEM DADOS DE DIVIDENDO,2024,0.3974,1.71,3.27,0.0,0.0,1,True
+PRIO3,PRIO (PetroRio),"Petróleo, Gás e Combustíveis",Aprovada (Pura),SEM DADOS DE DIVIDENDO,2023,0.3732,0.82,7.53,0.07,0.01,1,True
+PRIO3,PRIO (PetroRio),"Petróleo, Gás e Combustíveis",Aprovada (Pura),SEM DADOS DE DIVIDENDO,2022,0.3464,-0.1,9.23,0.0,0.0,1,True
+PRIO3,PRIO (PetroRio),"Petróleo, Gás e Combustíveis",Aprovada (Pura),SEM DADOS DE DIVIDENDO,2021,,,,0.0,,1,True
+PINE4,Banco Pine,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2025,0.3156,,6.73,0.39,0.2,3,True
+PINE4,Banco Pine,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2024,0.2104,,3.53,0.6,0.53,3,True
+PINE4,Banco Pine,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2023,0.1837,,1.86,0.16,0.09,3,True
+PINE4,Banco Pine,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2022,0.0471,,2.89,0.0,0.0,3,True
+PINE4,Banco Pine,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2021,,,,0.0,,3,True
+BBSE3,BB Seguridade (Holding),Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),2025,0.8684,,6.89,4.26,0.92,5,True
+BBSE3,BB Seguridade (Holding),Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),2024,0.8977,,6.4,2.65,0.59,5,True
+BBSE3,BB Seguridade (Holding),Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),2023,0.8096,,6.17,3.49,0.87,5,True
+BBSE3,BB Seguridade (Holding),Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),2022,0.771,,7.17,1.97,0.63,5,True
+BBSE3,BB Seguridade (Holding),Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),2021,,,,1.0,,5,True
+PSSA3,Porto (Porto Seguro),Seguros e Previdência,Aprovada (Pura),AGUARDAR (margem insuficiente),2025,0.2148,,8.72,3.01,0.57,4,True
+PSSA3,Porto (Porto Seguro),Seguros e Previdência,Aprovada (Pura),AGUARDAR (margem insuficiente),2024,0.1882,,7.87,0.8,0.19,4,True
+PSSA3,Porto (Porto Seguro),Seguros e Previdência,Aprovada (Pura),AGUARDAR (margem insuficiente),2023,0.1825,,7.12,1.37,0.39,4,True
+PSSA3,Porto (Porto Seguro),Seguros e Previdência,Aprovada (Pura),AGUARDAR (margem insuficiente),2022,0.1084,,10.82,1.16,0.65,4,True
+AERI3,Aeris Energy,Bens Industriais,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,2025,1.2943,-3.85,-0.23,0.0,,1,True
+AERI3,Aeris Energy,Bens Industriais,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,2024,-4.5128,-1.83,-0.37,0.0,,1,True
+AERI3,Aeris Energy,Bens Industriais,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,2023,-0.0936,3.65,-10.34,0.0,,1,True
+AERI3,Aeris Energy,Bens Industriais,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,2022,-0.1399,5.54,-7.04,0.41,,1,True
+AERI3,Aeris Energy,Bens Industriais,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,2021,,,,0.0,,1,True
+BRSR6,Banrisul,Financeiro,Aprovada com Ressalva,ELEGÍVEL PARA COMPRA,2025,0.1495,,3.47,1.6,0.38,5,True
+BRSR6,Banrisul,Financeiro,Aprovada com Ressalva,ELEGÍVEL PARA COMPRA,2024,0.0698,,4.83,0.99,0.56,5,True
+BRSR6,Banrisul,Financeiro,Aprovada com Ressalva,ELEGÍVEL PARA COMPRA,2023,0.0901,,4.85,0.92,0.43,5,True
+BRSR6,Banrisul,Financeiro,Aprovada com Ressalva,ELEGÍVEL PARA COMPRA,2022,0.0759,,3.97,0.88,0.5,5,True
+BRSR6,Banrisul,Financeiro,Aprovada com Ressalva,ELEGÍVEL PARA COMPRA,2021,,,,1.03,,5,True
+SHUL4,Schulz,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2025,0.1928,-0.29,6.28,0.73,0.96,5,False
+SHUL4,Schulz,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2024,0.1793,-0.14,7.11,0.38,0.56,5,False
+SHUL4,Schulz,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2023,0.2142,-0.34,7.45,0.29,0.4,5,False
+SHUL4,Schulz,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2022,0.2422,1.75,4.87,0.22,0.3,5,False
+SHUL4,Schulz,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2021,,,,0.09,,5,False
+CPFE3,CPFL Energia,Energia Elétrica,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2025,0.2439,2.38,10.37,0.0,0.0,3,True
+CPFE3,CPFL Energia,Energia Elétrica,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2024,0.2633,2.3,6.17,0.0,0.0,3,True
+CPFE3,CPFL Energia,Energia Elétrica,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2023,0.2928,2.01,7.43,2.89,0.6,3,True
+CPFE3,CPFL Energia,Energia Elétrica,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2022,0.3137,2.17,6.36,3.24,0.73,3,True
+CPFE3,CPFL Energia,Energia Elétrica,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2021,,,,3.7,,3,True
+CMIG3,Cemig,Energia Elétrica,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2025,0.1714,2.07,,1.65,,5,True
+CMIG3,Cemig,Energia Elétrica,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2024,0.26,0.92,4.98,1.33,0.53,5,True
+CMIG3,Cemig,Energia Elétrica,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2023,0.2338,0.96,4.44,0.99,0.49,5,True
+CMIG3,Cemig,Energia Elétrica,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2022,0.1879,1.52,4.73,1.97,1.06,5,True
+CMIG3,Cemig,Energia Elétrica,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2021,,,5.01,0.81,0.62,5,True
+KEPL3,Kepler Weber,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2025,0.2018,-0.01,10.93,0.84,0.93,5,True
+KEPL3,Kepler Weber,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2024,0.2689,-0.15,7.44,0.84,0.75,5,True
+KEPL3,Kepler Weber,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2023,0.3377,-0.35,6.61,0.86,0.63,5,True
+KEPL3,Kepler Weber,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2022,0.6404,-0.15,2.76,1.0,0.36,5,True
+KEPL3,Kepler Weber,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2021,,,,1.81,,5,True
+KLBN4,Klabin,Papel e Celulose,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2025,0.1779,2.69,16.45,0.34,1.47,5,True
+KLBN4,Klabin,Papel e Celulose,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2024,0.2753,3.74,13.53,0.26,0.86,5,True
+KLBN4,Klabin,Papel e Celulose,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2023,0.2326,2.57,7.75,0.24,0.55,5,True
+KLBN4,Klabin,Papel e Celulose,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2022,0.4667,2.19,3.99,0.27,0.37,5,True
+KLBN4,Klabin,Papel e Celulose,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2021,,,,0.07,,5,True
+BRSR5,Banrisul,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2025,0.1495,,3.27,1.9,0.45,5,True
+BRSR5,Banrisul,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2024,0.0698,,7.05,1.01,0.57,5,True
+BRSR5,Banrisul,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2023,0.0901,,6.69,0.93,0.44,5,True
+BRSR5,Banrisul,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2022,0.0759,,7.57,0.89,0.51,5,True
+BRSR5,Banrisul,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2021,,,,1.28,,5,True
+KLBN3,Klabin,Papel e Celulose,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2025,0.1779,2.69,16.67,0.34,1.47,5,True
+KLBN3,Klabin,Papel e Celulose,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2024,0.2753,3.74,14.66,0.26,0.86,5,True
+KLBN3,Klabin,Papel e Celulose,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2023,0.2326,2.57,7.77,0.24,0.55,5,True
+KLBN3,Klabin,Papel e Celulose,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2022,0.4667,2.19,4.0,0.27,0.37,5,True
+KLBN3,Klabin,Papel e Celulose,Aprovada (Pura),ELEGÍVEL PARA COMPRA,2021,,,,0.07,,5,True
+BRSR3,Banrisul,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2025,0.1495,,3.85,1.6,0.38,5,True
+BRSR3,Banrisul,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2024,0.0698,,5.62,0.99,0.56,5,True
+BRSR3,Banrisul,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2023,0.0901,,5.15,0.92,0.43,5,True
+BRSR3,Banrisul,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2022,0.0759,,4.5,0.88,0.5,5,True
+BRSR3,Banrisul,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2021,,,,1.03,,5,True
+SBSP3,Sabesp,Saneamento e Gás,Aprovada (Pura),AGUARDAR (margem insuficiente),2025,0.1996,2.04,10.72,1.25,0.51,4,False
+SBSP3,Sabesp,Saneamento e Gás,Aprovada (Pura),AGUARDAR (margem insuficiente),2024,0.2594,1.3,5.79,0.28,0.1,4,False
+SBSP3,Sabesp,Saneamento e Gás,Aprovada (Pura),AGUARDAR (margem insuficiente),2023,0.118,2.09,13.18,0.25,0.24,4,False
+SBSP3,Sabesp,Saneamento e Gás,Aprovada (Pura),AGUARDAR (margem insuficiente),2022,0.1142,2.15,11.28,0.18,0.21,4,False
+ITUB4,Itaú Unibanco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2025,0.2193,,9.58,4.45,1.11,5,False
+ITUB4,Itaú Unibanco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2024,0.1946,,6.37,2.13,0.58,5,False
+ITUB4,Itaú Unibanco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2023,0.1741,,8.14,1.11,0.37,5,False
+ITUB4,Itaú Unibanco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2022,0.1741,,6.37,0.9,0.34,5,False
+ITUB4,Itaú Unibanco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2021,,,,0.8,,5,False
+ITUB3,Itaú Unibanco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2025,0.2193,,8.88,4.45,1.11,5,False
+ITUB3,Itaú Unibanco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2024,0.1946,,5.5,2.13,0.58,5,False
+ITUB3,Itaú Unibanco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2023,0.1741,,6.74,1.11,0.37,5,False
+ITUB3,Itaú Unibanco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2022,0.1741,,5.4,0.9,0.34,5,False
+ITUB3,Itaú Unibanco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2021,,,,0.8,,5,False
+ABCB4,Banco ABC Brasil,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2025,0.1482,,5.44,2.58,0.62,4,True
+ABCB4,Banco ABC Brasil,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2024,0.1521,,4.11,2.34,0.58,4,True
+ABCB4,Banco ABC Brasil,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2023,0.145,,5.09,1.17,0.31,4,True
+ABCB4,Banco ABC Brasil,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2022,0.1537,,3.95,1.23,0.35,4,True
+UGPA3,Ultrapar,Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),2025,0.1566,2.39,9.06,1.75,0.78,5,True
+UGPA3,Ultrapar,Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),2024,0.1559,2.01,6.65,0.65,0.31,5,True
+UGPA3,Ultrapar,Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),2023,0.1806,1.16,10.37,0.35,0.16,5,True
+UGPA3,Ultrapar,Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),2022,0.1538,1.7,6.51,0.58,0.36,5,True
+UGPA3,Ultrapar,Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),2021,,,,0.4,,5,True
+CPLE3,Copel,Energia Elétrica,Aprovada (Pura),AGUARDAR (margem insuficiente),2025,0.1162,3.46,13.33,0.0,0.0,4,True
+CPLE3,Copel,Energia Elétrica,Aprovada (Pura),AGUARDAR (margem insuficiente),2024,0.1094,2.91,8.06,0.39,0.41,4,True
+CPLE3,Copel,Energia Elétrica,Aprovada (Pura),AGUARDAR (margem insuficiente),2023,0.0946,2.34,11.07,0.3,0.4,4,True
+CPLE3,Copel,Energia Elétrica,Aprovada (Pura),AGUARDAR (margem insuficiente),2022,0.0534,4.17,14.4,0.9,2.22,4,True
+CPLE3,Copel,Energia Elétrica,Aprovada (Pura),AGUARDAR (margem insuficiente),2021,,,,0.66,,4,True
+SUZB3,Suzano,Papel e Celulose,Aprovada (Pura),AGUARDAR (margem insuficiente),2025,0.306,2.29,4.76,1.12,0.1,4,True
+SUZB3,Suzano,Papel e Celulose,Aprovada (Pura),AGUARDAR (margem insuficiente),2024,-0.2191,97.65,-10.81,2.02,,4,True
+SUZB3,Suzano,Papel e Celulose,Aprovada (Pura),AGUARDAR (margem insuficiente),2023,0.3151,2.55,4.86,1.16,0.11,4,True
+SUZB3,Suzano,Papel e Celulose,Aprovada (Pura),AGUARDAR (margem insuficiente),2022,0.7072,1.77,2.54,3.13,0.18,4,True
+SUZB3,Suzano,Papel e Celulose,Aprovada (Pura),AGUARDAR (margem insuficiente),2021,,,,0.0,,4,True
+BEEF3,Minerva Foods,Consumo Não Cíclico,Aprovada (Pura),AGUARDAR (margem insuficiente),2025,0.6186,2.63,8.27,0.16,0.24,4,True
+BEEF3,Minerva Foods,Consumo Não Cíclico,Aprovada (Pura),AGUARDAR (margem insuficiente),2024,3.2566,7.11,-2.09,0.0,,4,True
+BEEF3,Minerva Foods,Consumo Não Cíclico,Aprovada (Pura),AGUARDAR (margem insuficiente),2023,2.4146,3.58,11.35,0.49,0.77,4,True
+BEEF3,Minerva Foods,Consumo Não Cíclico,Aprovada (Pura),AGUARDAR (margem insuficiente),2022,1.2875,3.33,12.02,0.5,0.5,4,True
+BEEF3,Minerva Foods,Consumo Não Cíclico,Aprovada (Pura),AGUARDAR (margem insuficiente),2021,,,,0.99,,4,True
+RECV3,Petroreconcavo,"Petróleo, Gás e Combustíveis",Aprovada (Pura),AGUARDAR (margem insuficiente),2025,0.1474,1.61,4.44,0.9,0.41,4,True
+RECV3,Petroreconcavo,"Petróleo, Gás e Combustíveis",Aprovada (Pura),AGUARDAR (margem insuficiente),2024,0.1033,1.23,8.73,2.75,1.84,4,True
+RECV3,Petroreconcavo,"Petróleo, Gás e Combustíveis",Aprovada (Pura),AGUARDAR (margem insuficiente),2023,0.1569,0.53,6.22,0.99,0.41,4,True
+RECV3,Petroreconcavo,"Petróleo, Gás e Combustíveis",Aprovada (Pura),AGUARDAR (margem insuficiente),2022,0.3027,0.19,5.54,0.77,0.2,4,True
+RECV3,Petroreconcavo,"Petróleo, Gás e Combustíveis",Aprovada (Pura),AGUARDAR (margem insuficiente),2021,,,,0.0,,4,True
+VBBR3,Vibra Energia,"Petróleo, Gás e Combustíveis",Aprovada (Pura),AGUARDAR (margem insuficiente),2025,0.096,3.14,13.74,1.53,0.86,4,True
+VBBR3,Vibra Energia,"Petróleo, Gás e Combustíveis",Aprovada (Pura),AGUARDAR (margem insuficiente),2024,0.3123,0.99,2.79,1.47,0.27,4,True
+VBBR3,Vibra Energia,"Petróleo, Gás e Combustíveis",Aprovada (Pura),AGUARDAR (margem insuficiente),2023,0.303,1.05,4.45,0.78,0.2,4,True
+VBBR3,Vibra Energia,"Petróleo, Gás e Combustíveis",Aprovada (Pura),AGUARDAR (margem insuficiente),2022,0.1219,3.65,9.04,0.8,0.62,4,True
+BBDC3,Bradesco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2025,0.1327,,7.0,1.57,0.74,5,True
+BBDC3,Bradesco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2024,0.1024,,5.82,0.74,0.48,5,True
+BBDC3,Bradesco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2023,0.0857,,9.59,1.54,1.21,5,True
+BBDC3,Bradesco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2022,0.133,,5.15,0.38,0.2,5,True
+BBDC3,Bradesco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2021,,,,0.84,,5,True
+BBDC4,Bradesco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2025,0.1327,,8.18,1.73,0.81,5,True
+BBDC4,Bradesco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2024,0.1024,,6.36,0.82,0.53,5,True
+BBDC4,Bradesco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2023,0.0857,,10.8,1.69,1.33,5,True
+BBDC4,Bradesco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2022,0.133,,5.84,0.42,0.22,5,True
+BBDC4,Bradesco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),2021,,,,0.92,,5,True
+CSMG3,Copasa,Saneamento e Gás,Aprovada (Pura),AGUARDAR (margem insuficiente),2025,0.165,2.23,11.55,2.28,0.61,5,True
+CSMG3,Copasa,Saneamento e Gás,Aprovada (Pura),AGUARDAR (margem insuficiente),2024,0.1636,1.96,5.47,2.77,0.8,5,True
+CSMG3,Copasa,Saneamento e Gás,Aprovada (Pura),AGUARDAR (margem insuficiente),2023,0.1821,1.47,4.52,2.89,0.79,5,True
+CSMG3,Copasa,Saneamento e Gás,Aprovada (Pura),AGUARDAR (margem insuficiente),2022,0.1163,1.6,4.84,0.38,0.17,5,True
+CSMG3,Copasa,Saneamento e Gás,Aprovada (Pura),AGUARDAR (margem insuficiente),2021,,,,0.94,,5,True
+SANB4,Banco Santander Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2025,0.102,,9.96,0.98,0.6,4,True
+SANB4,Banco Santander Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2024,0.1119,,6.11,0.84,0.47,4,True
+SANB4,Banco Santander Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2023,0.0826,,11.7,0.87,0.72,4,True
+SANB4,Banco Santander Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2022,0.1297,,6.4,1.17,0.64,4,True
+SANB3,Banco Santander Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2025,0.102,,9.56,0.89,0.55,4,True
+SANB3,Banco Santander Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2024,0.1119,,5.52,0.77,0.42,4,True
+SANB3,Banco Santander Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2023,0.0826,,10.48,0.79,0.66,4,True
+SANB3,Banco Santander Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2022,0.1297,,5.7,1.07,0.58,4,True
+SANB11,Banco Santander Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2025,0.102,,,1.88,,4,True
+SANB11,Banco Santander Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2024,0.1119,,,1.61,,4,True
+SANB11,Banco Santander Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2023,0.0826,,,1.67,,4,True
+SANB11,Banco Santander Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2022,0.1297,,,2.24,,4,True
+ITSA4,Itaúsa,Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),2025,0.1858,0.4,7.71,1.72,1.17,5,False
+ITSA4,Itaúsa,Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),2024,0.1634,0.4,5.35,0.62,0.47,5,False
+ITSA4,Itaúsa,Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),2023,0.1623,0.34,6.12,0.52,0.43,5,False
+ITSA4,Itaúsa,Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),2022,0.1878,0.46,4.18,0.51,0.39,5,False
+ITSA4,Itaúsa,Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),2021,,,,0.3,,5,False
+ITSA3,Itaúsa,Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),2025,0.1858,0.4,7.92,1.72,1.17,5,False
+ITSA3,Itaúsa,Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),2024,0.1634,0.4,5.46,0.62,0.47,5,False
+ITSA3,Itaúsa,Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),2023,0.1623,0.34,6.12,0.52,0.43,5,False
+ITSA3,Itaúsa,Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),2022,0.1878,0.46,4.38,0.51,0.39,5,False
+ITSA3,Itaúsa,Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),2021,,,,0.29,,5,False
+BBAS3,Banco do Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2025,0.0724,,8.93,1.18,0.49,5,True
+BBAS3,Banco do Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2024,0.1467,,4.88,2.19,0.47,5,True
+BBAS3,Banco do Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2023,0.1764,,4.56,1.89,0.36,5,True
+BBAS3,Banco do Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2022,0.1938,,2.54,2.09,0.39,5,True
+BBAS3,Banco do Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2021,,,,1.13,,5,True
+GGBR3,Gerdau,Mineração e Siderurgia,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2025,0.0259,1.27,23.68,0.62,0.86,5,True
+GGBR3,Gerdau,Mineração e Siderurgia,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2024,0.0788,0.76,7.05,0.78,0.35,5,True
+GGBR3,Gerdau,Mineração e Siderurgia,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2023,0.1529,0.69,4.44,1.33,0.37,5,True
+GGBR3,Gerdau,Mineração e Siderurgia,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2022,0.2478,0.57,3.03,2.88,0.54,5,True
+GGBR3,Gerdau,Mineração e Siderurgia,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2021,,,,2.44,,5,True
+GGBR4,Gerdau,Mineração e Siderurgia,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2025,0.0259,1.27,27.74,0.62,0.86,5,True
+GGBR4,Gerdau,Mineração e Siderurgia,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2024,0.0788,0.76,7.59,0.78,0.35,5,True
+GGBR4,Gerdau,Mineração e Siderurgia,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2023,0.1529,0.69,4.99,1.33,0.37,5,True
+GGBR4,Gerdau,Mineração e Siderurgia,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2022,0.2478,0.57,3.7,2.88,0.54,5,True
+GGBR4,Gerdau,Mineração e Siderurgia,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2021,,,,2.44,,5,True
+GOAU3,Metalúrgica Gerdau,Mineração e Siderurgia,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2025,0.0249,1.29,23.62,0.3,0.83,5,True
+GOAU3,Metalúrgica Gerdau,Mineração e Siderurgia,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2024,0.0771,0.75,6.26,0.34,0.3,5,True
+GOAU3,Metalúrgica Gerdau,Mineração e Siderurgia,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2023,0.1528,0.69,4.01,1.19,0.64,5,True
+GOAU3,Metalúrgica Gerdau,Mineração e Siderurgia,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2022,0.2275,0.57,2.68,0.94,0.36,5,True
+GOAU3,Metalúrgica Gerdau,Mineração e Siderurgia,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2021,,,,1.74,,5,True
+VAMO3,Grupo Vamos,Infraestrutura / Logística,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2025,0.1283,4.36,10.43,0.14,0.45,4,True
+VAMO3,Grupo Vamos,Infraestrutura / Logística,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2024,0.156,4.12,12.96,0.27,0.76,4,True
+VAMO3,Grupo Vamos,Infraestrutura / Logística,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2023,0.124,4.26,14.49,0.33,0.53,4,True
+VAMO3,Grupo Vamos,Infraestrutura / Logística,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),2022,0.1837,3.64,16.47,0.26,0.38,4,True

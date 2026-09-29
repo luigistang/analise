@@ -1,0 +1,237 @@
+﻿data_execucao,ticker,nome,setor,veredito,status,cotacao_atual,pl_preco_lucro,roe_retorno_sobre_patrimonio,preco_teto,margem_de_seguranca_pct
+2026-09-28,BBSE3,BB Seguridade (Holding),Holding,Aprovada (Pura),ELEGÍVEL PARA COMPRA,38.38,8.114165,0.85944,76.5,99.32
+2026-09-28,POMO3,Marcopolo,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,3.97,4.135417,0.2832,17.83,349.12
+2026-09-28,POMO4,Marcopolo,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,4.19,4.3645835,0.2832,17.83,325.54
+2026-09-28,FIQE3,Unifique,Telecomunicações,Aprovada (Pura),ELEGÍVEL PARA COMPRA,4.92,8.065574,0.18125999,14.0,184.55
+2026-09-28,BSLI4,Banco BRB,Financeiro,Aprovada com Ressalva,ELEGÍVEL PARA COMPRA,2.4,1.1881188,0.25134,8.0,233.33
+2026-09-28,BSLI3,Banco BRB,Financeiro,Aprovada com Ressalva,ELEGÍVEL PARA COMPRA,2.24,1.1089109,0.25134,7.25,223.66
+2026-09-28,WEGE3,WEG,Bens Industriais,Descartada,DESCARTADA,50.12,33.637585,0.30791,,
+2026-09-28,CMIG4,Cemig,Energia Elétrica,Aprovada (Pura),ELEGÍVEL PARA COMPRA,10.84,6.691358,0.15944,22.5,107.56
+2026-09-28,B3SA3,"B3 (Brasil, Bolsa, Balcão)",Financeiro,Descartada,DESCARTADA,17.66,17.66,0.27714002,,
+2026-09-28,CMIN3,CSN Mineração,Mineração e Siderurgia,Descartada,DESCARTADA,5.05,15.781251,0.28136,,
+2026-09-28,WIZC3,Wiz Soluções,Seguros e Previdência,Aprovada (Pura),ELEGÍVEL PARA COMPRA,7.74,6.2419353,0.26558,10.5,35.66
+2026-09-28,PINE4,Banco Pine,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),11.78,4.8477364,0.40772,13.62,15.62
+2026-09-28,TIMS3,TIM Brasil,Telecomunicações,Aprovada (Pura),ELEGÍVEL PARA COMPRA,18.48,10.266666,0.17254,27.83,50.6
+2026-09-28,PMAM3,CBR (CBR / Paranapanema),Mineração e Siderurgia,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,0.42,,,,
+2026-09-28,CXSE3,Caixa Seguridade,Seguros e Previdência,Aprovada (Pura),AGUARDAR (margem insuficiente),20.11,13.317882,0.33348998,23.33,16.01
+2026-09-28,SHUL3,Schulz,Bens Industriais,Descartada,DESCARTADA,27.94,73.52632,0.19103001,,
+2026-09-28,PRIO3,PRIO (PetroRio),"Petróleo, Gás e Combustíveis",Aprovada (Pura),SEM DADOS DE DIVIDENDO,61.63,12.893305,0.14225,,
+2026-09-28,VIVT3,Telefônica Brasil (Vivo),Telecomunicações,Descartada,DESCARTADA,29.51,14.395123,0.09872,,
+2026-09-28,PETR3,Petrobras,"Petróleo, Gás e Combustíveis",Descartada,DESCARTADA,54.01,5.253891,0.30274,,
+2026-09-28,PETR4,Petrobras,"Petróleo, Gás e Combustíveis",Descartada,DESCARTADA,48.72,4.7393,0.30274,,
+2026-09-28,MDIA3,M. Dias Branco,Consumo Não Cíclico,Descartada,DESCARTADA,16.34,8.510417,0.07809,,
+2026-09-28,PSSA3,Porto (Porto Seguro),Seguros e Previdência,Aprovada (Pura),AGUARDAR (margem insuficiente),47.0,8.274648,0.24169001,34.67,-26.23
+2026-09-28,RADL3,Raia Drogasil,Saúde e Varejo Farmacêutico,Descartada,DESCARTADA,17.67,20.788235,0.19993,,
+2026-09-28,LIGT3,Light,Energia Elétrica,Descartada,DESCARTADA,3.5,2.3333333,0.32412,,
+2026-09-28,FRAS3,Frasle Mobility (Fras-le),Bens Industriais,Descartada,DESCARTADA,22.55,22.55,0.124060005,,
+2026-09-28,TRPL3,ISA CTEEP (Transmissão Paulista),Energia Elétrica,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-28,TRPL4,ISA CTEEP (Transmissão Paulista),Energia Elétrica,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-28,ELET3,Eletrobras,Energia Elétrica,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-28,ELET6,Eletrobras,Energia Elétrica,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-28,NEOE3,Neoenergia,Energia Elétrica,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-28,CPLE5,Copel,Energia Elétrica,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-28,CPLE6,Copel,Energia Elétrica,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-28,BRGE3,Bradespar,Holding,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-28,BRGE8,Bradespar,Holding,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-28,EMBR3,Embraer,Bens Industriais,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-28,CCRO3,CCR,Infraestrutura / Logística,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-28,STBP3,Santos Brasil,Infraestrutura / Logística,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-28,JBSS3,JBS,Consumo Não Cíclico,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-28,BRFS3,BRF,Consumo Não Cíclico,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-28,MRFG3,Marfrig,Consumo Não Cíclico,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-28,ECOR3,Ecorodovias,Infraestrutura / Logística,Descartada,DESCARTADA,8.66,10.962025,0.12307,,
+2026-09-28,AERI3,Aeris Energy,Bens Industriais,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,2.14,,,,
+2026-09-28,SAPR3,Sanepar,Saneamento e Gás,Descartada,DESCARTADA,7.19,25.678572,0.03812,,
+2026-09-28,SAPR4,Sanepar,Saneamento e Gás,Descartada,DESCARTADA,6.56,23.428572,0.03812,,
+2026-09-28,SAPR11,Sanepar,Saneamento e Gás,Descartada,DESCARTADA,33.04,40.840546,0.03812,,
+2026-09-28,CPFE3,CPFL Energia,Energia Elétrica,Aprovada (Pura),ELEGÍVEL PARA COMPRA,43.9,8.426104,0.27276,62.17,41.62
+2026-09-28,EGIE3,Engie Brasil,Energia Elétrica,Descartada,DESCARTADA,28.87,8.392442,0.2859,,
+2026-09-28,IRBR3,IRB Brasil RE,Seguros e Previdência,Descartada,DESCARTADA,60.98,20.741495,0.04567,,
+2026-09-28,TAEE3,Taesa,Energia Elétrica,Descartada,DESCARTADA,13.33,8.436708,0.20858999,,
+2026-09-28,TAEE4,Taesa,Energia Elétrica,Descartada,DESCARTADA,13.55,8.57595,0.20858999,,
+2026-09-28,TAEE11,Taesa,Energia Elétrica,Descartada,DESCARTADA,40.22,38.67308,0.20858999,,
+2026-09-28,SHUL4,Schulz,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,4.39,6.013698,0.16851999,5.67,29.16
+2026-09-28,CMIG3,Cemig,Energia Elétrica,Aprovada (Pura),ELEGÍVEL PARA COMPRA,16.37,10.1049385,0.15944,24.5,49.66
+2026-09-28,KEPL3,Kepler Weber,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,6.53,8.1625,0.18312,9.0,37.83
+2026-09-28,VALE3,Vale,Mineração e Siderurgia,Descartada,DESCARTADA,71.16,27.369234,0.041149996,,
+2026-09-28,DESK3,Desktop,Telecomunicações,Descartada,DESCARTADA,19.14,39.875,0.04651,,
+2026-09-28,BRAV3,Brava Energia (3R / Enauta),"Petróleo, Gás e Combustíveis",Descartada,DESCARTADA,17.96,179.59999,0.0044400003,,
+2026-09-28,ALUP3,Alupar,Energia Elétrica,Descartada,DESCARTADA,11.0,13.095239,0.15841,,
+2026-09-28,ALUP4,Alupar,Energia Elétrica,Descartada,DESCARTADA,10.52,12.52381,0.15841,,
+2026-09-28,ALUP11,Alupar,Energia Elétrica,Descartada,DESCARTADA,31.55,7.5605083,0.15841,,
+2026-09-28,AURE3,Auren,Energia Elétrica,Descartada,DESCARTADA,12.51,,-0.076799996,,
+2026-09-28,AMBP3,Ambipar,Saneamento e Serviços,Descartada,DESCARTADA,0.2,,-0.01345,,
+2026-09-28,KLBN4,Klabin,Papel e Celulose,Aprovada (Pura),ELEGÍVEL PARA COMPRA,3.62,120.666664,0.036510002,5.5,51.93
+2026-09-28,RAIL3,Rumo Logística,Infraestrutura / Logística,Descartada,DESCARTADA,15.76,23.878788,0.0881,,
+2026-09-28,KLBN11,Klabin,Papel e Celulose,Descartada,DESCARTADA,18.31,27.700453,0.036510002,,
+2026-09-28,FRIO3,Metalfrio,Bens Industriais,Descartada,DESCARTADA,205.0,19.806763,0.119610004,,
+2026-09-28,PGMN3,Pague Menos,Saúde e Varejo Farmacêutico,Descartada,DESCARTADA,3.36,6.72,0.10585,,
+2026-09-28,EQTL3,Equatorial Energia,Energia Elétrica,Descartada,DESCARTADA,39.12,69.85714,0.050029997,,
+2026-09-28,USIM3,Usiminas,Mineração e Siderurgia,Descartada,DESCARTADA,6.55,,-0.08073,,
+2026-09-28,USIM5,Usiminas,Mineração e Siderurgia,Descartada,DESCARTADA,7.0,,-0.08073,,
+2026-09-28,KLBN3,Klabin,Papel e Celulose,Aprovada (Pura),ELEGÍVEL PARA COMPRA,3.82,127.333336,0.036510002,5.5,43.98
+2026-09-28,ENGI3,Energisa,Energia Elétrica,Descartada,DESCARTADA,12.25,20.416666,0.09408,,
+2026-09-28,ENGI4,Energisa,Energia Elétrica,Descartada,DESCARTADA,9.63,16.05,0.09408,,
+2026-09-28,ENGI11,Energisa,Energia Elétrica,Descartada,DESCARTADA,50.9,36.88406,0.09408,,
+2026-09-28,SBSP3,Sabesp,Saneamento e Gás,Aprovada (Pura),AGUARDAR (margem insuficiente),26.75,11.239495,0.18792,23.67,-11.51
+2026-09-28,ABCB4,Banco ABC Brasil,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),25.0,4.4883304,0.14905,29.25,17.0
+2026-09-28,ITUB4,Itaú Unibanco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),41.71,9.930953,0.21476,11.12,-73.34
+2026-09-28,ITUB3,Itaú Unibanco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),45.84,10.914287,0.21476,2.75,-94.0
+2026-09-28,BRSR6,Banrisul,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),15.31,3.817955,0.14481,11.0,-28.15
+2026-09-28,BRSR5,Banrisul,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),16.76,4.179551,0.14481,11.0,-34.37
+2026-09-28,BRSR3,Banrisul,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),18.57,4.6309223,0.14481,11.0,-40.76
+2026-09-28,GOAU4,Metalúrgica Gerdau (Holding),Holding,Descartada,DESCARTADA,11.2,18.666666,0.04168,,
+2026-09-28,UGPA3,Ultrapar,Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),37.34,11.384147,0.19804001,33.33,-10.74
+2026-09-28,BRAP3,Bradespar,Holding,Descartada,DESCARTADA,17.82,12.728572,0.0695,,
+2026-09-28,BRAP4,Bradespar,Holding,Descartada,DESCARTADA,20.59,14.707143,0.0695,,
+2026-09-28,RAPT3,Randoncorp (Randon),Bens Industriais,Descartada,DESCARTADA,8.3,,-0.01442,,
+2026-09-28,RAPT4,Randoncorp (Randon),Bens Industriais,Descartada,DESCARTADA,4.75,,-0.01442,,
+2026-09-28,CPLE3,Copel,Energia Elétrica,Aprovada (Pura),AGUARDAR (margem insuficiente),15.68,14.654205,0.12764,17.67,12.69
+2026-09-28,SUZB3,Suzano,Papel e Celulose,Aprovada (Pura),AGUARDAR (margem insuficiente),44.69,6.8021307,0.17604999,18.67,-58.22
+2026-09-28,CSAN3,Cosan,Holding,Descartada,DESCARTADA,3.74,,-0.27222002,,
+2026-09-28,BEEF3,Minerva Foods,Consumo Não Cíclico,Aprovada (Pura),AGUARDAR (margem insuficiente),4.01,10.282052,0.2322,2.0,-50.12
+2026-09-28,UNIP3,Unipar Carbocloro,Holding / Químico,Descartada,DESCARTADA,54.76,24.337776,0.107650004,,
+2026-09-28,UNIP5,Unipar Carbocloro,Holding / Químico,Descartada,DESCARTADA,57.06,25.36,0.107650004,,
+2026-09-28,UNIP6,Unipar Carbocloro,Holding / Químico,Descartada,DESCARTADA,56.66,25.182222,0.107650004,,
+2026-09-28,CSNA3,CSN (Companhia Siderúrgica Nacional),Mineração e Siderurgia,Descartada,DESCARTADA,5.99,,-0.12294,,
+2026-09-28,RECV3,Petroreconcavo,"Petróleo, Gás e Combustíveis",Aprovada (Pura),AGUARDAR (margem insuficiente),10.89,6.4058824,0.11252,11.33,4.04
+2026-09-28,VBBR3,Vibra Energia,"Petróleo, Gás e Combustíveis",Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),38.06,8.955295,0.22621,24.75,-34.97
+2026-09-28,TUPY3,Tupy,Bens Industriais,Descartada,DESCARTADA,15.99,,-0.28198,,
+2026-09-28,RAIZ4,Raízen,"Petróleo, Gás e Combustíveis",Descartada,DESCARTADA,0.29,,-8.3975,,
+2026-09-28,JSLG3,JSL,Infraestrutura / Logística,Descartada,DESCARTADA,6.55,,-0.06961,,
+2026-09-28,CAML3,Camil Alimentos,Consumo Não Cíclico,Descartada,DESCARTADA,5.11,17.033333,0.0341,,
+2026-09-28,BBDC3,Bradesco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),15.61,7.1278534,0.13763,2.62,-83.22
+2026-09-28,BBDC4,Bradesco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),17.66,8.063927,0.13763,2.88,-83.69
+2026-09-28,ROMI3,Romi,Bens Industriais,Descartada,DESCARTADA,6.43,7.9382715,0.061440002,,
+2026-09-28,MYPK3,Iochpe-Maxion,Bens Industriais,Descartada,DESCARTADA,9.34,15.311476,0.049039997,,
+2026-09-28,CSMG3,Copasa,Saneamento e Gás,Aprovada (Pura),AGUARDAR (margem insuficiente),56.38,16.533724,0.1497,17.0,-69.85
+2026-09-28,SANB11,Banco Santander Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),29.69,14.511242,0.11151,26.75,-9.9
+2026-09-28,SANB4,Banco Santander Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),14.66,8.282486,0.11151,11.62,-20.74
+2026-09-28,SANB3,Banco Santander Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),14.79,8.355932,0.11151,10.5,-29.01
+2026-09-28,ITSA4,Itaúsa,Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),13.95,8.611111,0.18924999,1.67,-88.03
+2026-09-28,ITSA3,Itaúsa,Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),14.1,8.703704,0.18924999,1.67,-88.16
+2026-09-28,SIMH3,Simpar,Holding,Descartada,DESCARTADA,8.33,,-0.0023100001,,
+2026-09-28,DXCO3,Dexco (antiga Duratex),Madeira e Construção,Descartada,DESCARTADA,5.67,,0.0073,,
+2026-09-28,BBAS3,Banco do Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),21.49,9.995348,0.105459996,1.75,-91.86
+2026-09-28,GGBR3,Gerdau,Mineração e Siderurgia,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),21.3,18.521738,0.041810002,11.5,-46.01
+2026-09-28,GGBR4,Gerdau,Mineração e Siderurgia,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),25.09,21.817392,0.041810002,11.5,-54.17
+2026-09-28,GOAU3,Metalúrgica Gerdau,Mineração e Siderurgia,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),10.04,16.733332,0.04168,5.5,-45.22
+2026-09-28,VAMO3,Grupo Vamos,Infraestrutura / Logística,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),3.85,13.75,0.10701,1.75,-54.55
+2026-09-29,POMO3,Marcopolo,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,3.89,4.041667,0.2832,17.83,358.35
+2026-09-29,POMO4,Marcopolo,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,4.11,4.28125,0.2832,17.83,333.82
+2026-09-29,FIQE3,Unifique,Telecomunicações,Aprovada (Pura),ELEGÍVEL PARA COMPRA,4.97,8.14754,0.18125999,14.0,181.69
+2026-09-29,WEGE3,WEG,Bens Industriais,Descartada,DESCARTADA,50.09,33.61745,0.30791,,
+2026-09-29,CMIG4,Cemig,Energia Elétrica,Aprovada (Pura),ELEGÍVEL PARA COMPRA,10.89,6.7222223,0.15944,22.5,106.61
+2026-09-29,BSLI3,Banco BRB,Financeiro,Aprovada com Ressalva,ELEGÍVEL PARA COMPRA,2.24,1.1089109,0.25134,4.12,83.93
+2026-09-29,B3SA3,"B3 (Brasil, Bolsa, Balcão)",Financeiro,Descartada,DESCARTADA,17.96,17.96,0.27714002,,
+2026-09-29,CMIN3,CSN Mineração,Mineração e Siderurgia,Descartada,DESCARTADA,4.75,14.84375,0.28136,,
+2026-09-29,WIZC3,Wiz Soluções,Seguros e Previdência,Aprovada (Pura),ELEGÍVEL PARA COMPRA,7.75,6.25,0.26558,10.5,35.48
+2026-09-29,BSLI4,Banco BRB,Financeiro,Aprovada com Ressalva,ELEGÍVEL PARA COMPRA,2.4,1.1881188,0.25134,4.12,71.67
+2026-09-29,TIMS3,TIM Brasil,Telecomunicações,Aprovada (Pura),ELEGÍVEL PARA COMPRA,18.51,10.283334,0.17254,27.83,50.35
+2026-09-29,PMAM3,CBR (CBR / Paranapanema),Mineração e Siderurgia,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,0.43,,,,
+2026-09-29,CXSE3,Caixa Seguridade,Seguros e Previdência,Aprovada (Pura),AGUARDAR (margem insuficiente),20.08,13.298014,0.33348998,23.33,16.19
+2026-09-29,SHUL3,Schulz,Bens Industriais,Descartada,DESCARTADA,27.94,73.52632,0.19103001,,
+2026-09-29,PRIO3,PRIO (PetroRio),"Petróleo, Gás e Combustíveis",Aprovada (Pura),SEM DADOS DE DIVIDENDO,61.41,12.84728,0.14225,,
+2026-09-29,PINE4,Banco Pine,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),11.82,4.8641973,0.40772,12.12,2.54
+2026-09-29,BBSE3,BB Seguridade (Holding),Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),38.85,8.213531,0.85944,31.5,-18.92
+2026-09-29,VIVT3,Telefônica Brasil (Vivo),Telecomunicações,Descartada,DESCARTADA,29.67,14.473171,0.09872,,
+2026-09-29,PETR3,Petrobras,"Petróleo, Gás e Combustíveis",Descartada,DESCARTADA,53.67,5.220817,0.30274,,
+2026-09-29,PETR4,Petrobras,"Petróleo, Gás e Combustíveis",Descartada,DESCARTADA,48.78,4.7451363,0.30274,,
+2026-09-29,MDIA3,M. Dias Branco,Consumo Não Cíclico,Descartada,DESCARTADA,16.05,8.359375,0.07809,,
+2026-09-29,PSSA3,Porto (Porto Seguro),Seguros e Previdência,Aprovada (Pura),AGUARDAR (margem insuficiente),46.93,8.262324,0.24169001,34.67,-26.12
+2026-09-29,RADL3,Raia Drogasil,Saúde e Varejo Farmacêutico,Descartada,DESCARTADA,18.18,21.388235,0.19993,,
+2026-09-29,LIGT3,Light,Energia Elétrica,Descartada,DESCARTADA,3.62,2.4133332,0.32412,,
+2026-09-29,FRAS3,Frasle Mobility (Fras-le),Bens Industriais,Descartada,DESCARTADA,22.45,22.45,0.124060005,,
+2026-09-29,TRPL3,ISA CTEEP (Transmissão Paulista),Energia Elétrica,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-29,TRPL4,ISA CTEEP (Transmissão Paulista),Energia Elétrica,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-29,ELET3,Eletrobras,Energia Elétrica,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-29,ELET6,Eletrobras,Energia Elétrica,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-29,NEOE3,Neoenergia,Energia Elétrica,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-29,CPLE5,Copel,Energia Elétrica,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-29,CPLE6,Copel,Energia Elétrica,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-29,BRGE3,Bradespar,Holding,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-29,BRGE8,Bradespar,Holding,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-29,EMBR3,Embraer,Bens Industriais,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-29,CCRO3,CCR,Infraestrutura / Logística,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-29,STBP3,Santos Brasil,Infraestrutura / Logística,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-29,JBSS3,JBS,Consumo Não Cíclico,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-29,BRFS3,BRF,Consumo Não Cíclico,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-29,MRFG3,Marfrig,Consumo Não Cíclico,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,,,,,
+2026-09-29,ECOR3,Ecorodovias,Infraestrutura / Logística,Descartada,DESCARTADA,8.64,10.936709,0.12307,,
+2026-09-29,AERI3,Aeris Energy,Bens Industriais,Revisar manualmente (dado insuficiente),SEM DADOS DE DIVIDENDO,2.13,,,,
+2026-09-29,SAPR3,Sanepar,Saneamento e Gás,Descartada,DESCARTADA,7.07,25.25,0.03812,,
+2026-09-29,SAPR4,Sanepar,Saneamento e Gás,Descartada,DESCARTADA,6.55,23.392859,0.03812,,
+2026-09-29,SAPR11,Sanepar,Saneamento e Gás,Descartada,DESCARTADA,33.11,40.92707,0.03812,,
+2026-09-29,EGIE3,Engie Brasil,Energia Elétrica,Descartada,DESCARTADA,29.17,8.479651,0.2859,,
+2026-09-29,IRBR3,IRB Brasil RE,Seguros e Previdência,Descartada,DESCARTADA,62.22,21.163265,0.04567,,
+2026-09-29,TAEE3,Taesa,Energia Elétrica,Descartada,DESCARTADA,13.32,8.430379,0.20858999,,
+2026-09-29,TAEE4,Taesa,Energia Elétrica,Descartada,DESCARTADA,13.68,8.658228,0.20858999,,
+2026-09-29,TAEE11,Taesa,Energia Elétrica,Descartada,DESCARTADA,40.61,39.81373,0.20858999,,
+2026-09-29,BRSR6,Banrisul,Financeiro,Aprovada com Ressalva,ELEGÍVEL PARA COMPRA,15.18,3.785536,0.14481,20.0,31.75
+2026-09-29,SHUL4,Schulz,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,4.37,5.986301,0.16851999,5.67,29.75
+2026-09-29,CPFE3,CPFL Energia,Energia Elétrica,Aprovada (Pura),ELEGÍVEL PARA COMPRA,44.67,8.573896,0.27276,62.17,39.18
+2026-09-29,CMIG3,Cemig,Energia Elétrica,Aprovada (Pura),ELEGÍVEL PARA COMPRA,16.52,10.197531,0.15944,24.5,48.31
+2026-09-29,KEPL3,Kepler Weber,Bens Industriais,Aprovada (Pura),ELEGÍVEL PARA COMPRA,6.53,8.0617285,0.18312,9.0,37.83
+2026-09-29,VALE3,Vale,Mineração e Siderurgia,Descartada,DESCARTADA,69.84,26.861538,0.041149996,,
+2026-09-29,DESK3,Desktop,Telecomunicações,Descartada,DESCARTADA,19.23,40.0625,0.04651,,
+2026-09-29,BRAV3,Brava Energia (3R / Enauta),"Petróleo, Gás e Combustíveis",Descartada,DESCARTADA,18.31,183.09999,0.0044400003,,
+2026-09-29,ALUP3,Alupar,Energia Elétrica,Descartada,DESCARTADA,10.96,13.04762,0.15841,,
+2026-09-29,ALUP4,Alupar,Energia Elétrica,Descartada,DESCARTADA,10.39,12.369048,0.15841,,
+2026-09-29,ALUP11,Alupar,Energia Elétrica,Descartada,DESCARTADA,31.77,7.6132283,0.15841,,
+2026-09-29,KLBN4,Klabin,Papel e Celulose,Aprovada (Pura),ELEGÍVEL PARA COMPRA,3.58,119.333336,0.036510002,5.5,53.63
+2026-09-29,BRSR5,Banrisul,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),16.76,4.179551,0.14481,20.0,19.33
+2026-09-29,AURE3,Auren,Energia Elétrica,Descartada,DESCARTADA,12.67,,-0.076799996,,
+2026-09-29,AMBP3,Ambipar,Saneamento e Serviços,Descartada,DESCARTADA,0.2,,-0.01345,,
+2026-09-29,RAIL3,Rumo Logística,Infraestrutura / Logística,Descartada,DESCARTADA,15.76,23.878788,0.0881,,
+2026-09-29,KLBN11,Klabin,Papel e Celulose,Descartada,DESCARTADA,18.15,27.458395,0.036510002,,
+2026-09-29,FRIO3,Metalfrio,Bens Industriais,Descartada,DESCARTADA,205.0,19.806763,0.119610004,,
+2026-09-29,PGMN3,Pague Menos,Saúde e Varejo Farmacêutico,Descartada,DESCARTADA,3.49,6.98,0.10585,,
+2026-09-29,EQTL3,Equatorial Energia,Energia Elétrica,Descartada,DESCARTADA,39.85,71.16071,0.050029997,,
+2026-09-29,USIM3,Usiminas,Mineração e Siderurgia,Descartada,DESCARTADA,6.45,,-0.08073,,
+2026-09-29,USIM5,Usiminas,Mineração e Siderurgia,Descartada,DESCARTADA,6.92,,-0.08073,,
+2026-09-29,KLBN3,Klabin,Papel e Celulose,Aprovada (Pura),ELEGÍVEL PARA COMPRA,3.8,126.666664,0.036510002,5.5,44.74
+2026-09-29,BRSR3,Banrisul,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),18.42,4.593516,0.14481,20.0,8.58
+2026-09-29,ENGI3,Energisa,Energia Elétrica,Descartada,DESCARTADA,12.49,20.816666,0.09408,,
+2026-09-29,ENGI4,Energisa,Energia Elétrica,Descartada,DESCARTADA,9.78,16.3,0.09408,,
+2026-09-29,ENGI11,Energisa,Energia Elétrica,Descartada,DESCARTADA,51.72,37.47826,0.09408,,
+2026-09-29,SBSP3,Sabesp,Saneamento e Gás,Aprovada (Pura),AGUARDAR (margem insuficiente),27.04,11.361344,0.18792,23.67,-12.46
+2026-09-29,ITUB4,Itaú Unibanco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),42.2,10.04762,0.21476,21.0,-50.24
+2026-09-29,ITUB3,Itaú Unibanco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),46.81,11.145239,0.21476,21.0,-55.14
+2026-09-29,GOAU4,Metalúrgica Gerdau (Holding),Holding,Descartada,DESCARTADA,10.85,18.083334,0.04168,,
+2026-09-29,ABCB4,Banco ABC Brasil,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),25.05,4.529837,0.14905,27.62,10.26
+2026-09-29,UGPA3,Ultrapar,Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),37.85,11.298508,0.19804001,22.33,-41.0
+2026-09-29,BRAP3,Bradespar,Holding,Descartada,DESCARTADA,17.86,12.757144,0.0695,,
+2026-09-29,BRAP4,Bradespar,Holding,Descartada,DESCARTADA,20.25,14.464286,0.0695,,
+2026-09-29,RAPT3,Randoncorp (Randon),Bens Industriais,Descartada,DESCARTADA,8.19,,-0.01442,,
+2026-09-29,RAPT4,Randoncorp (Randon),Bens Industriais,Descartada,DESCARTADA,4.78,,-0.01442,,
+2026-09-29,CPLE3,Copel,Energia Elétrica,Aprovada (Pura),AGUARDAR (margem insuficiente),15.73,14.700933,0.12764,17.67,12.33
+2026-09-29,SUZB3,Suzano,Papel e Celulose,Aprovada (Pura),AGUARDAR (margem insuficiente),44.34,6.759146,0.17604999,18.67,-57.89
+2026-09-29,CSAN3,Cosan,Holding,Descartada,DESCARTADA,3.72,,-0.27222002,,
+2026-09-29,BEEF3,Minerva Foods,Consumo Não Cíclico,Aprovada (Pura),AGUARDAR (margem insuficiente),3.92,10.051283,0.2322,2.0,-48.98
+2026-09-29,UNIP3,Unipar Carbocloro,Holding / Químico,Descartada,DESCARTADA,54.53,24.235556,0.107650004,,
+2026-09-29,UNIP5,Unipar Carbocloro,Holding / Químico,Descartada,DESCARTADA,57.06,25.36,0.107650004,,
+2026-09-29,UNIP6,Unipar Carbocloro,Holding / Químico,Descartada,DESCARTADA,56.12,24.942223,0.107650004,,
+2026-09-29,CSNA3,CSN (Companhia Siderúrgica Nacional),Mineração e Siderurgia,Descartada,DESCARTADA,5.42,,-0.12294,,
+2026-09-29,RECV3,Petroreconcavo,"Petróleo, Gás e Combustíveis",Aprovada (Pura),AGUARDAR (margem insuficiente),10.8,6.352941,0.11252,11.33,4.91
+2026-09-29,VBBR3,Vibra Energia,"Petróleo, Gás e Combustíveis",Aprovada (Pura),AGUARDAR (margem insuficiente),37.92,8.922353,0.22621,33.0,-12.97
+2026-09-29,TUPY3,Tupy,Bens Industriais,Descartada,DESCARTADA,16.45,,-0.28198,,
+2026-09-29,RAIZ4,Raízen,"Petróleo, Gás e Combustíveis",Descartada,DESCARTADA,0.29,,-8.3975,,
+2026-09-29,JSLG3,JSL,Infraestrutura / Logística,Descartada,DESCARTADA,6.96,,-0.06961,,
+2026-09-29,CAML3,Camil Alimentos,Consumo Não Cíclico,Descartada,DESCARTADA,5.12,17.066666,0.0341,,
+2026-09-29,BBDC3,Bradesco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),15.64,7.1415524,0.13763,11.0,-29.67
+2026-09-29,BBDC4,Bradesco,Financeiro,Aprovada com Ressalva,AGUARDAR (margem insuficiente),17.7,8.082191,0.13763,11.0,-37.85
+2026-09-29,ROMI3,Romi,Bens Industriais,Descartada,DESCARTADA,6.36,7.851852,0.061440002,,
+2026-09-29,MYPK3,Iochpe-Maxion,Bens Industriais,Descartada,DESCARTADA,9.04,14.819672,0.049039997,,
+2026-09-29,CSMG3,Copasa,Saneamento e Gás,Aprovada (Pura),AGUARDAR (margem insuficiente),56.85,16.671553,0.1497,17.0,-70.1
+2026-09-29,SANB4,Banco Santander Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),14.69,8.299435,0.11151,8.88,-39.55
+2026-09-29,SANB3,Banco Santander Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),14.78,8.350283,0.11151,8.88,-39.92
+2026-09-29,SANB11,Banco Santander Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),29.53,14.433041,0.11151,10.25,-65.29
+2026-09-29,ITSA4,Itaúsa,Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),14.15,8.734568,0.18924999,10.83,-23.46
+2026-09-29,ITSA3,Itaúsa,Holding,Aprovada (Pura),AGUARDAR (margem insuficiente),14.3,8.827161,0.18924999,10.83,-24.27
+2026-09-29,SIMH3,Simpar,Holding,Descartada,DESCARTADA,8.69,,-0.0023100001,,
+2026-09-29,DXCO3,Dexco (antiga Duratex),Madeira e Construção,Descartada,DESCARTADA,5.67,,0.0073,,
+2026-09-29,BBAS3,Banco do Brasil,Financeiro,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),22.12,10.288372,0.105459996,10.75,-51.4
+2026-09-29,GGBR3,Gerdau,Mineração e Siderurgia,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),20.67,17.973913,0.041810002,11.5,-44.36
+2026-09-29,GGBR4,Gerdau,Mineração e Siderurgia,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),24.27,21.10435,0.041810002,11.5,-52.62
+2026-09-29,GOAU3,Metalúrgica Gerdau,Mineração e Siderurgia,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),9.81,16.35,0.04168,5.5,-43.93
+2026-09-29,VAMO3,Grupo Vamos,Infraestrutura / Logística,Quase Aprovada (revisar),REVISAR MANUALMENTE (margem insuficiente),3.98,14.214286,0.10701,1.75,-56.03
