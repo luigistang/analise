@@ -84,6 +84,10 @@ INDICES_DESEJADOS = {
     "divida_total": "totalDebt",
     "caixa_total": "totalCash",
     "ebitda": "ebitda",
+    # Usados na Fórmula Mágica de Greenblatt (ver calcular_magic_formula)
+    "valor_empresa_ev": "enterpriseValue",
+    "valor_contabil_por_acao": "bookValue",
+    "acoes_em_circulacao": "sharesOutstanding",
 }
 
 
@@ -111,10 +115,9 @@ def calcular_cagr_receita_e_lucro(acao_yf: yf.Ticker):
     """
     Usa o histórico de resultados anuais (geralmente os últimos 4 anos
     disponíveis no Yahoo Finance) para calcular o CAGR de receita e de
-    lucro líquido. Também devolve o lucro por ação (EPS) do ano mais
-    recente disponível no balanço — usado só pra conferir se o P/L que o
-    Yahoo reporta em `.info` bate com os próprios balanços da empresa (ver
-    coletar_dados_acao).
+    lucro líquido. Também devolve o lucro por ação (EPS, usado pra
+    conferir o P/L) e o EBIT (lucro operacional, usado na Fórmula Mágica
+    de Greenblatt) do ano mais recente disponível no balanço.
     """
     try:
         financeiro = acao_yf.financials
@@ -122,6 +125,7 @@ def calcular_cagr_receita_e_lucro(acao_yf: yf.Ticker):
         cagr_lucro = _cagr_de_serie(financeiro.loc["Net Income"])
 
         eps_mais_recente = None
+        ebit_mais_recente = None
         if not financeiro.empty:
             for nome in ("Diluted EPS", "Basic EPS"):
                 if nome in financeiro.index:
@@ -129,10 +133,53 @@ def calcular_cagr_receita_e_lucro(acao_yf: yf.Ticker):
                     if not valor.empty:
                         eps_mais_recente = valor.iloc[0]
                         break
+            # EBIT = lucro operacional, usado na Fórmula Mágica de Greenblatt.
+            # "Operating Income" é o nome mais comum quando "EBIT" não existe.
+            for nome in ("EBIT", "Operating Income"):
+                if nome in financeiro.index:
+                    valor = financeiro.loc[nome].dropna()
+                    if not valor.empty:
+                        ebit_mais_recente = valor.iloc[0]
+                        break
 
-        return cagr_receita, cagr_lucro, eps_mais_recente
+        return cagr_receita, cagr_lucro, eps_mais_recente, ebit_mais_recente
     except Exception:
-        return None, None, None
+        return None, None, None, None
+
+
+# Quantos anos COMPLETOS de dividendo entram na média do método Barsi.
+# "Completo" = o ano já terminou; o ano corrente nunca entra, porque ele
+# ainda não fechou e um pagamento parcial puxaria a média pra baixo.
+ANOS_MEDIA_DIVIDENDO_BARSI = 3
+
+
+def calcular_dividendo_medio_anos_completos(acao_yf: yf.Ticker, quantidade_anos: int = ANOS_MEDIA_DIVIDENDO_BARSI):
+    """
+    Método Barsi de verdade: em vez de usar o dividendo de um ano só (que
+    pode ser atípico — ano de dividendo extra, ou ano fraco), soma os
+    dividendos REALMENTE PAGOS (acao_yf.dividends — não é uma estimativa,
+    é o valor que caiu na conta de quem tinha a ação) de cada um dos
+    últimos anos, e tira a média dos últimos `quantidade_anos` anos
+    COMPLETOS (o ano corrente nunca entra, porque ainda não terminou).
+    """
+    try:
+        dividendos = acao_yf.dividends
+        if dividendos.empty:
+            return None
+
+        dividendos.index = dividendos.index.tz_localize(None)
+        ano_atual = date.today().year
+        dividendo_por_ano = dividendos.groupby(dividendos.index.year).sum()
+
+        anos_completos = sorted(ano for ano in dividendo_por_ano.index if ano < ano_atual)
+        ultimos_anos_completos = anos_completos[-quantidade_anos:]
+        if not ultimos_anos_completos:
+            return None
+
+        media = dividendo_por_ano.loc[ultimos_anos_completos].mean()
+        return round(media, 2) if media > 0 else None
+    except Exception:
+        return None
 
 
 def _primeiro_valor_disponivel(tabela: pd.DataFrame, nomes_possiveis: list, coluna):
@@ -441,9 +488,14 @@ def coletar_dados_acao(ticker: str, info_empresa: dict) -> dict:
         for nome_coluna, campo_yahoo in INDICES_DESEJADOS.items():
             linha[nome_coluna] = info.get(campo_yahoo)
 
-        cagr_receita, cagr_lucro, eps_mais_recente = calcular_cagr_receita_e_lucro(acao_yf)
+        cagr_receita, cagr_lucro, eps_mais_recente, ebit_mais_recente = calcular_cagr_receita_e_lucro(acao_yf)
         linha["cagr_receita"] = cagr_receita
         linha["cagr_lucro"] = cagr_lucro
+        linha["ebit"] = ebit_mais_recente
+
+        # Método Barsi: média dos dividendos REALMENTE pagos nos últimos
+        # anos completos — ver calcular_dividendo_medio_anos_completos.
+        linha["dividendo_medio_anos_completos"] = calcular_dividendo_medio_anos_completos(acao_yf)
 
         # P/L "de verificação": preço de hoje ÷ lucro por ação do balanço
         # mais recente — tudo vindo da MESMA fonte (os balanços), pra
@@ -464,6 +516,31 @@ def coletar_dados_acao(ticker: str, info_empresa: dict) -> dict:
             divergencia = abs(pl_verificado - pl_do_yahoo) / pl_do_yahoo
             linha["pl_inconsistente"] = divergencia > 0.5  # mais de 50% de diferença
 
+        # Fórmula Mágica de Greenblatt: Earnings Yield (EBIT / Valor da
+        # Empresa) e ROIC (EBIT / Capital Investido). Capital Investido
+        # aqui é uma aproximação comum (Dívida + Patrimônio − Caixa), já
+        # que o Yahoo não entrega "capital de giro líquido + ativo fixo
+        # líquido" (a definição original de Greenblatt) pronto pra uso.
+        valor_contabil_acao = linha.get("valor_contabil_por_acao")
+        acoes_em_circulacao = linha.get("acoes_em_circulacao")
+        patrimonio_liquido = (
+            valor_contabil_acao * acoes_em_circulacao
+            if valor_contabil_acao and acoes_em_circulacao else None
+        )
+
+        linha["earnings_yield"] = None
+        linha["roic"] = None
+        ev = linha.get("valor_empresa_ev")
+        if ebit_mais_recente and ev and ev > 0:
+            linha["earnings_yield"] = round(ebit_mais_recente / ev, 4)
+
+        divida = linha.get("divida_total")
+        caixa = linha.get("caixa_total")
+        if ebit_mais_recente and patrimonio_liquido and divida is not None and caixa is not None:
+            capital_investido = divida + patrimonio_liquido - caixa
+            if capital_investido > 0:
+                linha["roic"] = round(ebit_mais_recente / capital_investido, 4)
+
         # info vazio ou quase vazio costuma ser o Yahoo bloqueando/limitando
         # os pedidos (rate limit), não a ação não ter dados de verdade.
         if not info or len(info) < 5:
@@ -472,8 +549,10 @@ def coletar_dados_acao(ticker: str, info_empresa: dict) -> dict:
             linha["status_coleta"] = "ok"
 
     except Exception as erro:
-        for nome_coluna in list(INDICES_DESEJADOS) + ["cagr_receita", "cagr_lucro",
-                                                        "pl_verificado_pelo_balanco", "pl_inconsistente"]:
+        for nome_coluna in list(INDICES_DESEJADOS) + ["cagr_receita", "cagr_lucro", "ebit",
+                                                        "dividendo_medio_anos_completos",
+                                                        "pl_verificado_pelo_balanco", "pl_inconsistente",
+                                                        "earnings_yield", "roic"]:
             linha[nome_coluna] = None
         linha["status_coleta"] = f"erro: {erro}"
 
@@ -547,26 +626,38 @@ DY_TETO_POR_VEREDITO = {
 
 def estimar_dividendo_projetado(linha: pd.Series):
     """
-    Pra Financeiro e Holding (ex: Itaúsa, Banco do Brasil), o campo
-    dividendRate que o Yahoo Finance reporta costuma vir muito espremido
-    ou incompleto (ex: R$ 0,10 quando o dividendo real é bem maior) — isso
-    jogava o Preço Teto pro chão e gerava falso alarme de "margem
-    insuficiente". Em vez de confiar nesse dado bruto, estima o dividendo
-    a partir do lucro por ação (EPS = cotação ÷ P/L usado) multiplicado
-    por um payout conservador de 40%, típico do setor bancário/holding na
-    B3. Pros demais setores, usa o dividendo do Yahoo normalmente.
+    Decide qual dividendo alimenta o Preço Teto, em ordem de preferência:
+
+    1) Método Barsi de verdade: a média dos dividendos REALMENTE pagos nos
+       últimos ANOS_MEDIA_DIVIDENDO_BARSI anos completos
+       (dividendo_medio_anos_completos — calculado a partir do histórico
+       de pagamentos, não de uma estimativa). Usado pra QUALQUER setor
+       quando esse dado existe, porque é o mais confiável: veio do que a
+       empresa realmente pagou, suavizado pra não depender de um ano só.
+
+    2) Se não tiver histórico de dividendo suficiente (ex: ação nova, ou
+       empresa que nunca pagou) E o setor for Financeiro/Holding: estima
+       via EPS (cotação ÷ P/L usado) x payout de 40% — porque pra esses
+       setores o dividendRate bruto do Yahoo costuma vir espremido/
+       incompleto, não dá pra usar como último recurso.
+
+    3) Por último, cai no dividendRate bruto do Yahoo
+       (dividendo_projetado) — melhor que nada, mas é o menos confiável
+       dos três.
     """
+    dividendo_medio = linha.get("dividendo_medio_anos_completos")
+    if pd.notna(dividendo_medio) and dividendo_medio is not None and dividendo_medio > 0:
+        return dividendo_medio
+
     setor = linha["setor"]
-    if setor not in SETORES_PAYOUT_ESTIMADO:
-        return linha["dividendo_projetado"]
+    if setor in SETORES_PAYOUT_ESTIMADO:
+        pl_usado = linha.get("pl_usado")
+        cotacao = linha.get("cotacao_atual")
+        if pd.notna(pl_usado) and pl_usado is not None and pl_usado > 0 and pd.notna(cotacao):
+            eps_estimado = cotacao / pl_usado
+            return round(eps_estimado * PAYOUT_ESTIMADO_FINANCEIRO_HOLDING, 2)
 
-    pl_usado = linha.get("pl_usado")
-    cotacao = linha.get("cotacao_atual")
-    if pd.isna(pl_usado) or pl_usado is None or pl_usado <= 0 or pd.isna(cotacao):
-        return linha["dividendo_projetado"]  # sem dado suficiente pra estimar, cai no valor original
-
-    eps_estimado = cotacao / pl_usado
-    return round(eps_estimado * PAYOUT_ESTIMADO_FINANCEIRO_HOLDING, 2)
+    return linha["dividendo_projetado"]
 
 
 def calcular_divida_liquida_sobre_ebitda(divida_total, caixa_total, ebitda):
@@ -814,7 +905,18 @@ def calcular_valuation(tabela: pd.DataFrame) -> pd.DataFrame:
     df["pl_usado"] = df.apply(pl_usado, axis=1)
     df["divida_liquida_ebitda_usada"] = df.apply(divida_usada, axis=1)
 
+    def fonte_dividendo(linha):
+        dividendo_medio = linha.get("dividendo_medio_anos_completos")
+        if pd.notna(dividendo_medio) and dividendo_medio is not None and dividendo_medio > 0:
+            return f"Média {ANOS_MEDIA_DIVIDENDO_BARSI} anos completos (Barsi)"
+        if linha["setor"] in SETORES_PAYOUT_ESTIMADO:
+            pl_usado = linha.get("pl_usado")
+            if pd.notna(pl_usado) and pl_usado is not None and pl_usado > 0:
+                return "Estimado via EPS x payout 40% (sem histórico de dividendo)"
+        return "dividendRate do Yahoo (sem histórico nem estimativa)"
+
     df["dividendo_projetado_usado"] = df.apply(estimar_dividendo_projetado, axis=1)
+    df["fonte_dividendo_usado"] = df.apply(fonte_dividendo, axis=1)
     df["dividendo_ajustado_setor_financeiro"] = df["setor"].isin(SETORES_PAYOUT_ESTIMADO)
 
     df["numero_graham"] = df.apply(
@@ -889,6 +991,57 @@ def destaques_diversificados(df: pd.DataFrame, quantidade: int = 5) -> pd.DataFr
     """
     elegiveis = df[df["status"] == "ELEGÍVEL PARA COMPRA"]
     return elegiveis.drop_duplicates(subset="setor", keep="first").head(quantidade)
+
+
+# Setores excluídos da Fórmula Mágica — mesma exceção que o próprio
+# Greenblatt fazia no método original: EBIT/Capital Investido não é uma
+# métrica comparável pra financeiras, seguradoras e utilities (o "capital
+# investido" delas não significa a mesma coisa que o de uma indústria).
+SETORES_EXCLUIDOS_MAGIC_FORMULA = [
+    "Financeiro", "Seguros e Previdência", "Energia Elétrica",
+    "Saneamento e Gás", "Saneamento e Serviços",
+]
+
+
+def calcular_magic_formula(tabela: pd.DataFrame) -> pd.DataFrame:
+    """
+    Fórmula Mágica de Joel Greenblatt — DIFERENTE do resto do script: não
+    elimina nenhuma ação por critério nenhum, só RANKEIA toda a lista (sem
+    financeiras/seguradoras/utilities, ver SETORES_EXCLUIDOS_MAGIC_FORMULA)
+    por dois critérios, e soma as duas posições:
+
+    - Earnings Yield (EBIT ÷ Valor da Empresa): quão barata a ação está em
+      relação ao lucro operacional que a empresa gera.
+    - ROIC (EBIT ÷ Capital Investido): quão eficiente a empresa é gerando
+      retorno sobre o capital que está empregado no negócio.
+
+    Quanto MENOR a soma das duas posições, melhor — significa que a ação
+    está bem ranqueada nos dois critérios ao mesmo tempo (barata E
+    eficiente), que é a ideia central do método.
+
+    Capital Investido aqui é uma aproximação comum (Dívida + Patrimônio −
+    Caixa) — o Yahoo não entrega pronta a definição exata de Greenblatt
+    (capital de giro líquido + ativo fixo líquido).
+    """
+    df = tabela[~tabela["setor"].isin(SETORES_EXCLUIDOS_MAGIC_FORMULA)].copy()
+    df = df[
+        df["earnings_yield"].notna() & df["roic"].notna()
+        & (df["earnings_yield"] > 0) & (df["roic"] > 0)
+    ]
+
+    if df.empty:
+        return pd.DataFrame(columns=[
+            "ticker", "nome", "setor", "earnings_yield", "roic",
+            "rank_earnings_yield", "rank_roic", "soma_dos_rankings",
+        ])
+
+    df["rank_earnings_yield"] = df["earnings_yield"].rank(ascending=False, method="min").astype(int)
+    df["rank_roic"] = df["roic"].rank(ascending=False, method="min").astype(int)
+    df["soma_dos_rankings"] = df["rank_earnings_yield"] + df["rank_roic"]
+
+    df = df.sort_values("soma_dos_rankings", ascending=True)
+    return df[["ticker", "nome", "setor", "earnings_yield", "roic",
+               "rank_earnings_yield", "rank_roic", "soma_dos_rankings"]]
 
 
 # -----------------------------------------------------------------------
@@ -1019,8 +1172,8 @@ if __name__ == "__main__":
 
     colunas_resumo = [
         "ticker", "nome", "setor", "veredito", "status", "pontuacao_final",
-        "preco_teto", "cotacao_atual", "margem_de_seguranca_pct", "dividendo_ajustado_setor_financeiro",
-        "dividendo_projetado_usado", "usou_media_ciclica",
+        "preco_teto", "cotacao_atual", "margem_de_seguranca_pct",
+        "dividendo_projetado_usado", "fonte_dividendo_usado", "usou_media_ciclica",
         "pl_usado", "pl_inconsistente", "pvp_preco_valor_patrimonial", "numero_graham", "peg_ratio",
         "classificacao_crescimento",
     ]
@@ -1037,6 +1190,15 @@ if __name__ == "__main__":
 
     print(f"\n=== DESTAQUES DIVERSIFICADOS (melhor de cada setor, dentro do Top {QUANTIDADE_TOP}) ===")
     print(destaques_diversificados(top10)[colunas_resumo].to_string(index=False))
+
+    print("\nCalculando a Fórmula Mágica de Greenblatt (ranking cruzado de Earnings Yield + ROIC, toda a lista exceto Financeiro/Seguros/Utilities)...")
+    magic_formula = calcular_magic_formula(tabela_final)
+    nome_arquivo_magic = "magic_formula_greenblatt.csv"
+    magic_formula.to_csv(nome_arquivo_magic, index=False, encoding="utf-8-sig")
+    print(f"\n=== TOP 20 FÓRMULA MÁGICA DE GREENBLATT (menor soma dos rankings = melhor) ===")
+    print(magic_formula.head(20).to_string(index=False))
+    print(f"\nRanking completo da Fórmula Mágica salvo como: {nome_arquivo_magic}")
+    print("Obs: esse ranking é um critério À PARTE — não elimina nem confirma nada do restante do script, é só mais uma lente pra comparar.")
 
     descartadas = tabela_final[tabela_final["veredito"] == "Descartada"]
     print(f"\n=== POR QUE {len(descartadas)} AÇÕES FORAM DESCARTADAS DE VERDADE ===")
@@ -1077,4 +1239,3 @@ if __name__ == "__main__":
         print(f"\nBacktest salvo como: {nome_arquivo_backtest}")
 
     print(f"\nArquivo completo salvo como: {nome_arquivo}")
-    ##

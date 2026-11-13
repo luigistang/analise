@@ -1,0 +1,51 @@
+Nome,Ticker,Setor,Tipo
+Apple Inc.,AAPL,Technology,Ação
+Microsoft Corporation,MSFT,Technology,Ação
+NVIDIA Corporation,NVDA,Technology,Ação
+Broadcom Inc.,AVGO,Technology,Ação
+Qualcomm Incorporated,QCOM,Technology,Ação
+Alphabet Inc. (Class A),GOOGL,Communication Services,Ação
+Meta Platforms Inc.,META,Communication Services,Ação
+Berkshire Hathaway Inc. (Class B),BRK-B,Financials,Ação
+JPMorgan Chase & Co.,JPM,Financials,Ação
+Bank of America Corporation,BAC,Financials,Ação
+BlackRock Inc.,BLK,Financials,Ação
+S&P Global Inc.,SPGI,Financials,Ação
+Johnson & Johnson,JNJ,Healthcare,Ação
+Procter & Gamble Company,PG,Consumer Staples,Ação
+The Coca-Cola Company,KO,Consumer Staples,Ação
+PepsiCo Inc.,PEP,Consumer Staples,Ação
+Walmart Inc.,WMT,Consumer Staples,Ação
+Costco Wholesale Corporation,COST,Consumer Staples,Ação
+Target Corporation,TGT,Consumer Discretionary,Ação
+McDonald's Corporation,MCD,Consumer Discretionary,Ação
+Home Depot Inc.,HD,Consumer Discretionary,Ação
+Lowe's Companies Inc.,LOW,Consumer Discretionary,Ação
+Abbott Laboratories,ABT,Healthcare,Ação
+AbbVie Inc.,ABBV,Healthcare,Ação
+Medtronic plc,MDT,Healthcare,Ação
+UnitedHealth Group Incorporated,UNH,Healthcare,Ação
+Exxon Mobil Corporation,XOM,Energy,Ação
+Chevron Corporation,CVX,Energy,Ação
+Caterpillar Inc.,CAT,Industrials,Ação
+3M Company,MMM,Industrials,Ação
+United Parcel Service Inc.,UPS,Industrials,Ação
+Lockheed Martin Corporation,LMT,Industrials,Ação
+Union Pacific Corporation,UNP,Industrials,Ação
+Waste Management Inc.,WM,Industrials,Ação
+NextEra Energy Inc.,NEE,Utilities,Ação
+Realty Income Corporation,O,Real Estate,Ação
+Prologis Inc.,PLD,Real Estate,Ação
+Vanguard S&P 500 ETF,VOO,Index ETF,ETF
+iShares Core S&P 500 ETF,IVV,Index ETF,ETF
+Vanguard Total Stock Market ETF,VTI,Index ETF,ETF
+Schwab U.S. Dividend Equity ETF,SCHD,Dividend ETF,ETF
+Vanguard Dividend Appreciation ETF,VIG,Dividend ETF,ETF
+SPDR S&P Dividend ETF,SDY,Dividend ETF,ETF
+iShares Select Dividend ETF,DVY,Dividend ETF,ETF
+JPMorgan Equity Premium Income ETF,JEPI,Option Strategy ETF,ETF
+JPMorgan Nasdaq Equity Premium Income ETF,JEPQ,Option Strategy ETF,ETF
+Vanguard Information Technology ETF,VGT,Sector ETF,ETF
+Vanguard Real Estate ETF,VNQ,Sector ETF,ETF
+Invesco QQQ Trust,QQQ,Index ETF,ETF
+iShares MSCI USA Quality Factor ETF,QUAL,Factor ETF,ETF
