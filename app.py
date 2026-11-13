@@ -158,50 +158,131 @@ def mostrar(r: dict, mercado: str):
                 cols[i % 3].metric(k, val)
 
 
-st.title("📈 Screener de Valuation")
-st.write("Digite o ticker e veja o resultado na hora. Os dados vêm do Yahoo Finance.")
+aba_ao_vivo, aba_acomp = st.tabs(["Consultar ao vivo", "Acompanhar mudanças"])
 
-mercado = st.radio("Mercado", ["B3", "EUA"], horizontal=True)
-exemplo = "BBSE3, KLBN4, VALE3" if mercado == "B3" else "AAPL, KO, SCHD"
-texto = st.text_input("Ticker (pode colocar vários, separados por vírgula)", placeholder=f"Ex.: {exemplo}")
-arquivo = st.file_uploader("Ou suba um CSV com uma coluna chamada ticker", type=["csv"])
+with aba_ao_vivo:
+    st.title("📈 Screener de Valuation")
+    st.write("Digite o ticker e veja o resultado na hora. Os dados vêm do Yahoo Finance.")
 
-tickers = [t.strip().upper() for t in texto.replace(";", ",").split(",") if t.strip()]
-if arquivo is not None:
+    mercado = st.radio("Mercado", ["B3", "EUA"], horizontal=True)
+    exemplo = "BBSE3, KLBN4, VALE3" if mercado == "B3" else "AAPL, KO, SCHD"
+    texto = st.text_input("Ticker (pode colocar vários, separados por vírgula)", placeholder=f"Ex.: {exemplo}")
+    arquivo = st.file_uploader("Ou suba um CSV com uma coluna chamada ticker", type=["csv"])
+
+    tickers = [t.strip().upper() for t in texto.replace(";", ",").split(",") if t.strip()]
+    if arquivo is not None:
+        try:
+            df = pd.read_csv(arquivo, encoding="utf-8-sig", sep=None, engine="python")
+            col = next((c for c in df.columns if str(c).strip().lower() in ("ticker", "símbolo", "simbolo", "symbol")), df.columns[0])
+            for cel in df[col].dropna().astype(str):
+                tickers += [t.strip().upper() for t in cel.split(",") if t.strip()]
+        except Exception:
+            st.error("Não consegui ler o CSV. Confira se ele tem uma coluna chamada ticker.")
+    tickers = list(dict.fromkeys(tickers))
+
+    LIMITE = 40
+    if len(tickers) > LIMITE:
+        st.warning(f"Para não sobrecarregar o Yahoo, analisei só os primeiros {LIMITE} tickers.")
+        tickers = tickers[:LIMITE]
+
+    if st.button("Analisar", type="primary", disabled=not tickers):
+        resultados = []
+        barra = st.progress(0.0, text="Buscando dados...")
+        for i, t in enumerate(tickers, start=1):
+            barra.progress((i - 1) / len(tickers), text=f"Buscando {t} ({i} de {len(tickers)})...")
+            resultados.append(analisar_b3(t) if mercado == "B3" else analisar_eua(t))
+            time.sleep(0.3)
+        barra.empty()
+        st.session_state["resultados"] = (mercado, resultados)
+
+    if "resultados" in st.session_state:
+        mercado_res, resultados = st.session_state["resultados"]
+        ok = [r for r in resultados if not r.get("erro")]
+        for r in resultados:
+            mostrar(r, mercado_res)
+        if len(ok) > 1:
+            tabela = pd.DataFrame(ok)
+            st.download_button("Baixar resultado em CSV", tabela.to_csv(index=False).encode("utf-8-sig"),
+                               file_name="resultado_screener.csv", mime="text/csv")
+
+    st.divider()
+    st.caption("Não é recomendação de investimento. Dados gratuitos do Yahoo Finance podem estar errados ou atrasados. "
+               "Dividendos de ações americanas pagos a brasileiros têm retenção de 30% nos EUA, não descontada aqui.")
+
+
+# ----------------------------------------------------------------------
+# Aba "Acompanhar mudanças": compara as duas últimas atualizações diárias
+# ----------------------------------------------------------------------
+ARQUIVOS_HISTORICO = {"B3": "historico_execucoes.csv", "EUA": "historico_execucoes_usa.csv"}
+
+
+@st.cache_data(ttl=900, show_spinner=False)
+def ler_historico(caminho: str):
     try:
-        df = pd.read_csv(arquivo, encoding="utf-8-sig", sep=None, engine="python")
-        col = next((c for c in df.columns if str(c).strip().lower() in ("ticker", "símbolo", "simbolo", "symbol")), df.columns[0])
-        for cel in df[col].dropna().astype(str):
-            tickers += [t.strip().upper() for t in cel.split(",") if t.strip()]
+        h = pd.read_csv(caminho, encoding="utf-8-sig")
     except Exception:
-        st.error("Não consegui ler o CSV. Confira se ele tem uma coluna chamada ticker.")
-tickers = list(dict.fromkeys(tickers))
+        return None
+    h["data_execucao"] = pd.to_datetime(h["data_execucao"], errors="coerce")
+    h = h.dropna(subset=["data_execucao"]).drop_duplicates(["data_execucao", "ticker"], keep="last")
+    return h.sort_values(["ticker", "data_execucao"])
 
-LIMITE = 40
-if len(tickers) > LIMITE:
-    st.warning(f"Para não sobrecarregar o Yahoo, analisei só os primeiros {LIMITE} tickers.")
-    tickers = tickers[:LIMITE]
 
-if st.button("Analisar", type="primary", disabled=not tickers):
-    resultados = []
-    barra = st.progress(0.0, text="Buscando dados...")
-    for i, t in enumerate(tickers, start=1):
-        barra.progress((i - 1) / len(tickers), text=f"Buscando {t} ({i} de {len(tickers)})...")
-        resultados.append(analisar_b3(t) if mercado == "B3" else analisar_eua(t))
-        time.sleep(0.3)
-    barra.empty()
-    st.session_state["resultados"] = (mercado, resultados)
+def comparar(h: pd.DataFrame):
+    datas = sorted(h["data_execucao"].unique())
+    atual = h[h["data_execucao"] == datas[-1]].set_index("ticker")
+    ant = h[h["data_execucao"] == datas[-2]].set_index("ticker")
+    c = atual.join(ant, how="left", lsuffix="", rsuffix="_ant")
+    c["variacao_pct"] = (c["cotacao_atual"] / c["cotacao_atual_ant"] - 1) * 100
+    c["margem_delta"] = c["margem_de_seguranca_pct"] - c["margem_de_seguranca_pct_ant"]
+    c["mudou_veredito"] = c["veredito"].ne(c["veredito_ant"]) & c["veredito_ant"].notna()
+    return pd.Timestamp(datas[-2]), pd.Timestamp(datas[-1]), c
 
-if "resultados" in st.session_state:
-    mercado_res, resultados = st.session_state["resultados"]
-    ok = [r for r in resultados if not r.get("erro")]
-    for r in resultados:
-        mostrar(r, mercado_res)
-    if len(ok) > 1:
-        tabela = pd.DataFrame(ok)
-        st.download_button("Baixar resultado em CSV", tabela.to_csv(index=False).encode("utf-8-sig"),
-                           file_name="resultado_screener.csv", mime="text/csv")
 
-st.divider()
-st.caption("Não é recomendação de investimento. Dados gratuitos do Yahoo Finance podem estar errados ou atrasados. "
-           "Dividendos de ações americanas pagos a brasileiros têm retenção de 30% nos EUA, não descontada aqui.")
+with aba_acomp:
+    st.write("Acompanhe o que mudou entre uma atualização e outra. Os dados são atualizados uma vez por dia útil, depois do fechamento, e **não são em tempo real**.")
+    mer = st.radio("Mercado", ["B3", "EUA"], horizontal=True, key="mer_acomp")
+    h = ler_historico(ARQUIVOS_HISTORICO[mer])
+    if h is None or h["data_execucao"].nunique() < 1:
+        st.info("Ainda não há atualizações salvas para esse mercado.")
+    else:
+        ultima = h["data_execucao"].max()
+        st.caption(f"Última atualização: {ultima:%d/%m/%Y}. Atualizações guardadas: {h['data_execucao'].nunique()}.")
+        if h["data_execucao"].nunique() < 2:
+            st.info("Só existe uma atualização até agora. As comparações aparecem a partir da segunda.")
+        else:
+            d0, d1, c = comparar(h)
+            st.write(f"Comparando **{d0:%d/%m}** com **{d1:%d/%m}**.")
+            ent = c[(c["status"] == "ELEGÍVEL PARA COMPRA") & (c["status_ant"] != "ELEGÍVEL PARA COMPRA")]
+            sai = c[(c["status"] != "ELEGÍVEL PARA COMPRA") & (c["status_ant"] == "ELEGÍVEL PARA COMPRA")]
+            m = st.columns(3)
+            m[0].metric("Entraram em Elegível para compra", len(ent))
+            m[1].metric("Saíram de Elegível para compra", len(sai))
+            m[2].metric("Mudaram de veredito", int(c["mudou_veredito"].sum()))
+            cols = ["nome", "veredito", "status", "cotacao_atual", "variacao_pct", "margem_de_seguranca_pct", "margem_delta"]
+            fmt = {"cotacao_atual": "{:.2f}", "variacao_pct": "{:+.1f}%", "margem_de_seguranca_pct": "{:.1f}%", "margem_delta": "{:+.1f}"}
+            nomes = {"nome": "Empresa", "veredito": "Veredito", "status": "Status", "cotacao_atual": "Cotação",
+                     "variacao_pct": "Variação", "margem_de_seguranca_pct": "Margem", "margem_delta": "Mudança na margem"}
+            def tabela(df):
+                st.dataframe(df[cols].rename(columns=nomes).style.format({nomes[k]: v for k, v in fmt.items()}, na_rep="—"),
+                             width="stretch")
+            if len(ent):
+                st.subheader("Entraram em Elegível para compra"); tabela(ent)
+            if len(sai):
+                st.subheader("Saíram de Elegível para compra"); tabela(sai)
+            mud = c[c["mudou_veredito"]]
+            if len(mud):
+                st.subheader("Mudaram de veredito")
+                st.dataframe(mud[["nome", "veredito_ant", "veredito"]].rename(columns={"nome": "Empresa", "veredito_ant": "Antes", "veredito": "Agora"}), width="stretch")
+            st.subheader("Maiores altas e quedas de preço")
+            mv = c.dropna(subset=["variacao_pct"]).sort_values("variacao_pct")
+            col_a, col_b = st.columns(2)
+            with col_a:
+                st.caption("Maiores altas"); tabela(mv.tail(5).iloc[::-1])
+            with col_b:
+                st.caption("Maiores quedas"); tabela(mv.head(5))
+
+        st.subheader("Histórico de um ativo")
+        t = st.selectbox("Ativo", sorted(h["ticker"].unique()), key="ativo_acomp")
+        serie = h[h["ticker"] == t].set_index("data_execucao")
+        st.line_chart(serie[["cotacao_atual", "preco_teto"]].rename(columns={"cotacao_atual": "Cotação", "preco_teto": "Preço-teto"}))
+        st.caption("Dados do Yahoo Finance, com defasagem. Não é recomendação de investimento.")

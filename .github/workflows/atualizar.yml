@@ -1,0 +1,48 @@
+name: Atualizar dados do screener
+
+# Roda de segunda a sexta às 19:30 (horário de Brasília), depois do fechamento
+# da B3 e da bolsa americana. Também dá para rodar à mão na aba Actions.
+on:
+  schedule:
+    - cron: "30 22 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Rodar B3
+        continue-on-error: true
+        run: python b3_indices.py
+
+      - name: Rodar EUA
+        continue-on-error: true
+        run: python us_indices.py
+
+      - name: Salvar resultados
+        run: |
+          git config user.name "atualizacao-automatica"
+          git config user.email "actions@users.noreply.github.com"
+          git add -- '*.csv'
+          if git diff --cached --quiet; then
+            echo "Nada novo para salvar."
+          else
+            git commit -m "Atualização diária dos dados ($(date -u +%F))"
+            git pull --rebase origin ${{ github.ref_name }}
+            git push
+          fi
